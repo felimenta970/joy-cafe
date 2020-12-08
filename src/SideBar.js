@@ -2,6 +2,7 @@ import { ProSidebar, Menu, MenuItem, SubMenu, SidebarHeader, SidebarContent, Sid
 import './App.scss';
 
 import React from 'react';
+import Almoco from './almoco.js';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 // import { } from 'react-icons';
@@ -42,7 +43,7 @@ const SideBar = ({toggled, handleToggleSidebar}) => {
 					</MenuItem>
 					<MenuItem>
 						Almoço
-						<Link to="./almoco.js" />
+						<Link to="/almoco"/>
 					</MenuItem>
 					<SubMenu title="Bebidas">
 						<MenuItem>Refrigerantes e Água</MenuItem>

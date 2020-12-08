@@ -3,19 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import AlmocoUI from './almocoUI.js';
 
 ReactDOM.render(
   //<React.StrictMode>
-    <BrowserRouter>
-      <Switch>
-        <Route exact path="/almocoUI" component={AlmocoUI}/>
-        <Route exact path="/" component={App}/>
-      </Switch>
-      
-    </BrowserRouter>,
+  <Router>
+    <App />
+  </Router>,
   //</React.StrictMode>,
   document.getElementById('root')
 );
