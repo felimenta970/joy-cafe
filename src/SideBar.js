@@ -1,11 +1,15 @@
 import { ProSidebar, Menu, MenuItem, SubMenu, SidebarHeader, SidebarContent, SidebarFooter } from 'react-pro-sidebar';
 import './App.scss';
+
 import React from 'react';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
+
 // import { } from 'react-icons';
 // import joyLogo from './assets/joyLogo.png'
 
 const SideBar = ({toggled, handleToggleSidebar}) => {
 	return (
+		<Router>
 		<ProSidebar
 			breakPoint="md"
 			className="side-menu"
@@ -15,7 +19,10 @@ const SideBar = ({toggled, handleToggleSidebar}) => {
 			<SidebarHeader className = "headerSection">
 
 				<Menu>
-					<MenuItem>Home</MenuItem>
+					<MenuItem>
+						Home
+						<Link to="/"/>
+					</MenuItem>
 					<SubMenu title="Sobre Nós">
 						<MenuItem>Sobre Nós</MenuItem>
 						<MenuItem>Serivços</MenuItem>
@@ -33,7 +40,10 @@ const SideBar = ({toggled, handleToggleSidebar}) => {
 							Cardápio
 						</div>
 					</MenuItem>
-					<MenuItem>Almoço</MenuItem>
+					<MenuItem>
+						Almoço
+						<Link to="./almoco.js" />
+					</MenuItem>
 					<SubMenu title="Bebidas">
 						<MenuItem>Refrigerantes e Água</MenuItem>
 						<MenuItem>Cafés</MenuItem>
@@ -67,6 +77,7 @@ const SideBar = ({toggled, handleToggleSidebar}) => {
 			</SidebarFooter>
 			
 		</ProSidebar>
+		</Router>
 	);
 };
 
