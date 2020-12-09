@@ -1,3 +1,4 @@
+// Import estilos básicos da sidebar
 @import '~react-pro-sidebar/dist/scss/styles.scss';
 
 .pro-sidebar .pro-menu .pro-menu-item {
@@ -16,7 +17,7 @@ body {
     display: flex;
     position: relative;
 
-
+    // Botão para abrir menu lateral em telas menores
     .btn-toggle {
         cursor: pointer;
         width: 35px;
@@ -31,14 +32,45 @@ body {
         font-size: 15px;
     }
 
+    // Mostrar botão apenas com telas menores que md
     @media (max-width: $breakpoint-md) {
         .btn-toggle {
           display: flex;
         }
     }
 
+    // Conteúdo principal a ser exibido
     main {
         padding: 24px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto; // Necessário para tornar a página scrollável
+        
+    }
+
+    // Estilo para itens
+    // Nome
+    .itemName {
+        margin-bottom: 0.3vh;
+        font-size: 2.5vh;
+    }
+
+    // Desc
+    .itemDesc {
+        margin-bottom: 0.3vh;
+        font-style: italic;
+    }
+
+    // Preço
+    .itemPreco {
+        font-weight: 600;
+        font-size: 2.1vh;
+    }
+
+    // Grupo que contém o item
+    .itemGroup {
+        margin-bottom: 2vh;
     }
 
 }
