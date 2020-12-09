@@ -4,6 +4,9 @@ import React from 'react';
 // Import icones
 import { FaBars } from 'react-icons/fa';
 
+import almoco_alt from './../assets/almoco-alt.jpg';
+import almoco from './../assets/almoco.jpg';
+
 // Import dados
 import { almocoItens } from "../data/almocoItens.js"; 
 
@@ -24,10 +27,17 @@ const Almoco = ({handleToggleSidebar}) => {
                 
             </header>
 
-            <h1>ALMOÇO</h1>
+            <h1 className="categoryName">ALMOÇO</h1>
+
+            <img src={almoco_alt} alt="Foto de prato de comida" className="heroImgMobile" />
+
+            
+
+            <img src={almoco} alt="Foto de prato de comida" className="heroImg" />
 
             {/* Criamos um div para conter a lista de itens */}
             <div className="allItens">
+
 
                 {/* Do arquivo, pegamos os dados e uma chave para cada um */}
                 {almocoItens.map((data, key) => {
@@ -52,7 +62,7 @@ const Almoco = ({handleToggleSidebar}) => {
                 })}
 
             </div>
-        
+
         </main>
     );
 }
