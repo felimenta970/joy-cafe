@@ -1,12 +1,17 @@
 // Import estilos básicos da sidebar
 @import '~react-pro-sidebar/dist/scss/styles.scss';
+@import "~bootstrap/scss/bootstrap-grid";
 
 // Import font
 
-$sidebar-color: #FFFFFF;
+$sidebar-color: #9ce0d0;
+$backgroud-temp: #87BFB2;
 
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap');
 
 $submenu-bg-color: #252525;
 
@@ -28,15 +33,15 @@ body {
     height: 100vh;
     display: flex;
     position: relative;
-    font-family: 'Lora', serif;
+    font-family: 'Lora', sans-serif;
 
     // Botão para abrir menu lateral em telas menores
     .btn-toggle {
         cursor: pointer;
         width: 35px;
         height: 35px !important;
-        background: #222222;
-        color: #FFF;
+        background: #87BFB2;
+        color: #101010;
         text-align: center;
         border-radius: 50%;
         display: none;
@@ -52,8 +57,7 @@ body {
         display: flex;
         flex-direction: column;
         overflow-y: auto; // Necessário para tornar a página scrollável
-
-        background-color: #222222;
+        background-color:#87BFB2;
         
     }
 
@@ -63,37 +67,40 @@ body {
         margin-bottom: 10px;
         font-size: 25px;
         font-weight: bold;
-        color: #01c4ca;
+        color: #063133;
+        //text-transform: uppercase;
+        //opacity: 90%;
     }
 
     // Desc
     .itemDesc {
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         font-style: italic;
         font-weight: 500;
-        color: white;
-        opacity: 80%;
+        color: #202020;
+        //opacity: 95%;
         font-size: 18px;
+
     }
 
     // Preço
     .itemPreco {
         font-weight: 600;
         font-size: 25px;
-        color: #01c4ca;
+        color: #063133;
         margin-bottom: 10px;
     }
 
     .categoryName {        
         font-weight: bold;
         color: $sidebar-color;
-        opacity: 80%;
+        color: #063133;
     }
 
     // Grupo que contém o item
     .itemGroup {
         margin-bottom: 10px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     }
 
     .heroImgMobile {
@@ -101,6 +108,7 @@ body {
         height: auto;
         margin-bottom: 20px;
         display: none;
+        opacity: 85%;
     }
 
     .heroImg {
@@ -109,29 +117,36 @@ body {
         display: none;
     }
 
+    // .line {
+    //     width: 100px;
+    //     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    //     margin-bottom: 7px;
+    // }
+
     // Mostrar botão apenas com telas menores que md
     @media (max-width: $breakpoint-md) {
 
         .btn-toggle {
-          display: flex;
+            display: flex;
         }
 
 
     }
 
-    @media (max-width: $breakpoint-lg) {
+    @media (max-width: $breakpoint-xl) {
 
         .heroImgMobile {
             display: inline;
         }
     }
 
-    @media (min-width: $breakpoint-lg) {
+     @media (min-width: $breakpoint-xl) {
 
         .heroImg {
-            width: 40%;
-            display: flex;
+            //display: inline-block;
+            //padding: 20px;
         }
+
     }
 
 }

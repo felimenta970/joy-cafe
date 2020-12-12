@@ -59,7 +59,10 @@ const SideBar = ({toggled, handleToggleSidebar}) => {
 						{/* Sub menu bebidas */}
 						<SubMenu title="Bebidas">
 
-							<MenuItem>Refrigerantes e Água</MenuItem>
+							<MenuItem>
+								Refrigerantes e Água
+								<Link to="/refriAgua" />
+							</MenuItem>
 							<MenuItem>Cafés</MenuItem>
 							<MenuItem>Chás</MenuItem>
 							<MenuItem>Leites</MenuItem>

@@ -5,9 +5,11 @@ import { Route, Switch } from 'react-router-dom';
 // Import componente da barra lateral
 import SideBar from './SideBar.js';
 
+
 // Import de páginas
 import Main from './Main.js';
 import Almoco from './pages/almoco.js';
+import Refri from './pages/refriAgua.js';
 
 // Import estilos
 import './styles/App.scss';
@@ -40,6 +42,13 @@ function App({}) {
 					/>
 				</Route>
 
+
+				<Route path="/refriAgua">
+					<Refri 
+						handleToggleSidebar={handleToggleSidebar}
+					/>
+				</Route>
+
 				{/* Página inicial ("/" ou "joy-cafe") */}
 				<Route exact path="/">
 					<Main
@@ -52,6 +61,8 @@ function App({}) {
 						handleToggleSidebar={handleToggleSidebar}
 					/>
 				</Route>
+
+
 			</Switch>
 				
 		</div>

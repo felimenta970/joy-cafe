@@ -4,13 +4,13 @@ import React from 'react';
 // Import icones
 import { FaBars } from 'react-icons/fa';
 
-import almoco_alt from './../assets/almoco-alt.jpg';
-import almoco from './../assets/almoco.jpg';
+
+import refri from './../assets/refri.jpg';
 
 // Import dados
-import { almocoItens } from "../data/almocoItens.js"; 
+import { refriItens } from "../data/refriItens.js"; 
 
-const Almoco = ({handleToggleSidebar}) => {
+const Refri = ({handleToggleSidebar}) => {
     return (
         <main>
             {/* Ícone para abrir menu, só aparece quando menor md ou menor */}
@@ -27,20 +27,18 @@ const Almoco = ({handleToggleSidebar}) => {
                 
             </header>
 
-            <h1 className="categoryName">ALMOÇO</h1>
+            <h1 className="categoryName">REFRIGERANTES E ÁGUA</h1>
 
-            <img src={almoco_alt} alt="Foto de prato de comida" className="heroImgMobile" />
+            <img src={refri} alt="Foto de lata de Coca Cola" className="heroImgMobile" />
 
             
-
-            <img src={almoco} alt="Foto de prato de comida" className="heroImg" />
 
             {/* Criamos um div para conter a lista de itens */}
             <div className="allItens">
 
 
                 {/* Do arquivo, pegamos os dados e uma chave para cada um */}
-                {almocoItens.map((data, key) => {
+                {refriItens.map((data, key) => {
                     return (
                         {/* Exibimos o conteúdo e damos um nome de classe para cada um */},
                         <div className="itemGroup" key={key}>
@@ -48,7 +46,6 @@ const Almoco = ({handleToggleSidebar}) => {
                             <div className="itemName">
                                 {data.itemName}
                             </div>
-
 
                             <div className="itemDesc">
                                 {data.itemDesc}
@@ -68,4 +65,4 @@ const Almoco = ({handleToggleSidebar}) => {
     );
 }
 
-export default Almoco;
+export default Refri;

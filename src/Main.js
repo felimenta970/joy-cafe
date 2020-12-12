@@ -1,6 +1,6 @@
 // Imports React, rotas
 import React from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 
 // Import icons
 import { FaBars } from 'react-icons/fa';
