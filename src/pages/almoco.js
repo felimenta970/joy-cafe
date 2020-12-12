@@ -11,6 +11,7 @@ import almoco from './../assets/almoco.jpg';
 import { almocoItens } from "../data/almocoItens.js"; 
 
 const Almoco = ({handleToggleSidebar}) => {
+    console.log("ola");
     return (
         <main>
             {/* Ícone para abrir menu, só aparece quando menor md ou menor */}
@@ -31,7 +32,7 @@ const Almoco = ({handleToggleSidebar}) => {
 
             <img src={almoco_alt} alt="Foto de prato de comida" className="heroImgMobile" />
 
-            
+                
 
             <img src={almoco} alt="Foto de prato de comida" className="heroImg" />
 

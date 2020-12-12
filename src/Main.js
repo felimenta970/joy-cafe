@@ -18,16 +18,19 @@ const Main = ({handleToggleSidebar}) => {
                 /* Header, a ser adicionado
                 Transformado em um componente? */
                 }
-                <header>
+                <div>
                     
-                </header>
+                </div>
 
                 {/* Corpo da página, a ser construído */}
-                <body>
+                <div>
                     <p>Bem vindo!</p>
                     <p>Horários de funcionamento: Segunda à sexta, 7:00 até 18:00</p>
+                    <p>Teste
+                        <Link to="/refriAgua" />
+                    </p>
 
-                </body>
+                </div>
                 
             </main>
         </Router>

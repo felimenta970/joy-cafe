@@ -15,9 +15,8 @@ const SideBar = ({toggled, handleToggleSidebar}) => {
 	return (
 		// Rotas para lidarmos com troca de página
 		// Inútil? Não funciona ainda
-		<Router>
 
-			{/* Inicializar a barra com algumas propriedades */}
+			{/* Inicializar a barra com algumas propriedades */},
 			<ProSidebar
 				breakPoint="md"
 				className="side-menu"
@@ -51,9 +50,8 @@ const SideBar = ({toggled, handleToggleSidebar}) => {
 							</div>
 						</MenuItem>
 
-						<MenuItem>
-							Almoço
-							<Link to="/almoco"/>
+						<MenuItem>			
+							<Link to="/almoco">Almoço</Link>
 						</MenuItem>
 
 						{/* Sub menu bebidas */}
@@ -100,7 +98,6 @@ const SideBar = ({toggled, handleToggleSidebar}) => {
 				</SidebarFooter>
 				
 			</ProSidebar>
-		</Router>
 	);
 };
 
