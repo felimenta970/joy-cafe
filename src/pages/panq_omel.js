@@ -4,12 +4,12 @@ import React from 'react';
 // Import icones
 import { FaBars } from 'react-icons/fa';
 
-import almoco from './../assets/almoco-alt.jpg';
+import omelete from './../assets/omelete.jpg';
 
 // Import dados
-import { almocoItens } from "../data/dadosItens.js"; 
+import { panquecaOmeleteItens } from "../data/dadosItens.js"; 
 
-const Almoco = ({handleToggleSidebar}) => {
+const Omelete = ({handleToggleSidebar}) => {
     return (
         <div className="main">
             
@@ -19,9 +19,9 @@ const Almoco = ({handleToggleSidebar}) => {
             </div>
 
 
-            <h1 className="categoryName">ALMOÇO</h1>
+            <h1 className="categoryName">PANQUECAS E OMELETES</h1>
 
-            <img src={almoco} alt="Foto de prato de comida" className="heroImgMobile" />
+            <img src={omelete} alt="Foto de prato de comida" className="heroImgMobile" />
 
 
             {/* Criamos um div para conter a lista de itens */}
@@ -29,7 +29,7 @@ const Almoco = ({handleToggleSidebar}) => {
 
 
                 {/* Do arquivo, pegamos os dados e uma chave para cada um */}
-                {almocoItens.map((data, key) => {
+                {panquecaOmeleteItens.map((data, key) => {
                     return (
                         {/* Exibimos o conteúdo e damos um nome de classe para cada um */},
                         <div className="itemGroup" key={key}>
@@ -57,4 +57,4 @@ const Almoco = ({handleToggleSidebar}) => {
     );
 }
 
-export default Almoco;
+export default Omelete;

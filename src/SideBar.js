@@ -40,7 +40,9 @@ const SideBar = ({toggled, handleToggleSidebar}) => {
 				{/* Conteúdo da barra lateral */}
 				<SidebarContent> {
 					<Menu iconShape="circle">
+
 						<MenuItem>
+
 							<div style = {{
 								fontSize: 20,
 								fontWeight: 'bold',
@@ -48,10 +50,12 @@ const SideBar = ({toggled, handleToggleSidebar}) => {
 							}}>
 								Cardápio
 							</div>
+
 						</MenuItem>
 
-						<MenuItem>			
-							<Link to="/almoco">Almoço</Link>
+						<MenuItem>
+							Almoço			
+							<Link to="/almoco" />
 						</MenuItem>
 
 						{/* Sub menu bebidas */}
@@ -61,31 +65,79 @@ const SideBar = ({toggled, handleToggleSidebar}) => {
 								Refrigerantes e Água
 								<Link to="/refriAgua" />
 							</MenuItem>
-							<MenuItem>Cafés</MenuItem>
-							<MenuItem>Chás</MenuItem>
-							<MenuItem>Leites</MenuItem>
-							<MenuItem>Capuccinos</MenuItem>
-							<MenuItem>Sucos</MenuItem>
+
+							<MenuItem>
+								Cafés
+								<Link to="/cafe" />
+							</MenuItem>
+
+							<MenuItem>
+								Chás
+								<Link to="/cha" />
+							</MenuItem>
+
+							<MenuItem>
+								Leites
+								<Link to="/leites" />
+							</MenuItem>
+
+							<MenuItem>
+								Capuccinos
+								<Link to="/capuccinos" />
+							</MenuItem>
+
+							<MenuItem>
+								Sucos
+								<Link to="/sucos" />
+							</MenuItem>
 
 						</SubMenu>
 
 						{/* Sub menu salgados */}
 						<SubMenu title="Salgados">		
 
-							<MenuItem>Pães de Queijo</MenuItem>
-							<MenuItem>Salgados</MenuItem>
+							<MenuItem>
+								Pães de Queijo
+								<Link to="/pao_queijo" />
+							</MenuItem>
+
+							<MenuItem>
+								Salgados
+								<Link to="/salgados" />
+							</MenuItem>
+
 						</SubMenu>
 
 						{/* Sub menu lanches */}
 						<SubMenu title="Lanches">
 
-							<MenuItem>Quentes</MenuItem>
-							<MenuItem>Naturais</MenuItem>
+							<MenuItem>
+								Quentes
+								<Link to="/lanches_quentes" />
+							</MenuItem>
+
+							<MenuItem>
+								Naturais
+								<Link to ="/naturais" />
+							</MenuItem>
+
 						</SubMenu>
 
-						<MenuItem>Panquecas e Omeletes</MenuItem>
-						<MenuItem>Saladas</MenuItem>
-						<MenuItem>Doces e Taças</MenuItem>
+						<MenuItem>
+							Panquecas e Omeletes
+							<Link to="/panq_omel" />
+						</MenuItem>
+
+						<MenuItem>
+							Saladas
+							<Link to="/saladas" />
+						</MenuItem>
+
+						<MenuItem>
+							Doces e Taças
+							<Link to="/doces" />
+						</MenuItem>
+						
 					</Menu>
 
 				} </SidebarContent>

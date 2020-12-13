@@ -4,41 +4,32 @@ import React from 'react';
 // Import icones
 import { FaBars } from 'react-icons/fa';
 
-
-import refri from './../assets/refri.jpg';
+import doce from './../assets/bolo_cenoura.jpg';
 
 // Import dados
-import { refriItens } from "../data/refriItens.js"; 
+import { docesItens } from "../data/dadosItens.js"; 
 
-const Refri = ({handleToggleSidebar}) => {
+const Doces = ({handleToggleSidebar}) => {
     return (
-        <main>
+        <div className="main">
+            
             {/* Ícone para abrir menu, só aparece quando menor md ou menor */}
             <div className="btn-toggle" onClick={() => handleToggleSidebar(true)}>
                 <FaBars />
             </div>
 
-            {
-            /* Header, a ser adicionado
-            Transformado em um componente? */
-            }
 
-            <header>
-                
-            </header>
+            <h1 className="categoryName">DOCES</h1>
 
-            <h1 className="categoryName">REFRIGERANTES E ÁGUA</h1>
+            <img src={doce} alt="Foto de prato de comida" className="heroImgMobile" />
 
-            <img src={refri} alt="Foto de lata de Coca Cola" className="heroImgMobile" />
-
-            
 
             {/* Criamos um div para conter a lista de itens */}
             <div className="allItens">
 
 
                 {/* Do arquivo, pegamos os dados e uma chave para cada um */}
-                {refriItens.map((data, key) => {
+                {docesItens.map((data, key) => {
                     return (
                         {/* Exibimos o conteúdo e damos um nome de classe para cada um */},
                         <div className="itemGroup" key={key}>
@@ -46,6 +37,7 @@ const Refri = ({handleToggleSidebar}) => {
                             <div className="itemName">
                                 {data.itemName}
                             </div>
+
 
                             <div className="itemDesc">
                                 {data.itemDesc}
@@ -61,8 +53,8 @@ const Refri = ({handleToggleSidebar}) => {
 
             </div>
 
-        </main>
+        </div>
     );
 }
 
-export default Refri;
+export default Doces;

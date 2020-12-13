@@ -8,7 +8,7 @@ import { FaBars } from 'react-icons/fa';
 const Main = ({handleToggleSidebar}) => {
     return (
         <Router>
-            <main>
+            <div className="main">
                 {/* Ícone para abrir menu, só aparece quando menor md ou menor */}
                 <div className="btn-toggle" onClick={() => handleToggleSidebar(true)}>
                     <FaBars />
@@ -26,13 +26,10 @@ const Main = ({handleToggleSidebar}) => {
                 <div>
                     <p>Bem vindo!</p>
                     <p>Horários de funcionamento: Segunda à sexta, 7:00 até 18:00</p>
-                    <p>Teste
-                        <Link to="/refriAgua" />
-                    </p>
 
                 </div>
                 
-            </main>
+            </div>
         </Router>
     );
 }
