@@ -8,7 +8,7 @@ import './styles/App.scss';
 
 // React e rotas
 import React from 'react';
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // Componente da barra lateral
 const SideBar = ({toggled, handleToggleSidebar}) => {
