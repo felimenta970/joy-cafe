@@ -1,6 +1,6 @@
 {
-  "homepage": "http://felimenta970.githib.io/joy-cafe",
-  "name": "my-app",
+  "homepage": "http://felimenta970.github.io/joy-cafe",
+  "name": "joy-cafe",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
