@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/joy-cafe/static/css/main.5cde9976.chunk.css",
-    "main.js": "/joy-cafe/static/js/main.66547250.chunk.js",
-    "main.js.map": "/joy-cafe/static/js/main.66547250.chunk.js.map",
+    "main.js": "/joy-cafe/static/js/main.6c5f3ccc.chunk.js",
+    "main.js.map": "/joy-cafe/static/js/main.6c5f3ccc.chunk.js.map",
     "runtime-main.js": "/joy-cafe/static/js/runtime-main.630eb7f5.js",
     "runtime-main.js.map": "/joy-cafe/static/js/runtime-main.630eb7f5.js.map",
     "static/js/2.a516dbf4.chunk.js": "/joy-cafe/static/js/2.a516dbf4.chunk.js",
@@ -29,6 +29,6 @@
     "static/js/runtime-main.630eb7f5.js",
     "static/js/2.a516dbf4.chunk.js",
     "static/css/main.5cde9976.chunk.css",
-    "static/js/main.66547250.chunk.js"
+    "static/js/main.6c5f3ccc.chunk.js"
   ]
 }
