@@ -48,7 +48,7 @@ function App({}) {
 			{/* Ativamos a barra lateral antes de tudo */}
 
 			{/* Switch para que React saiba qual página renderizar */}
-			<Router>
+			<Router basename="/joy-cafe">
 
 				<SideBar 
 					className= "side-menu"
