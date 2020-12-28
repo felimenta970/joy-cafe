@@ -2,13 +2,11 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import almoco from './assets/almoco-alt.jpg';
-import joy_logo from './assets/logo_joy.png';
 
 // Import icons
 import { FaBars } from 'react-icons/fa';
 
-const Main = ({handleToggleSidebar}) => {
+const Servicos = ({handleToggleSidebar}) => {
     return (
         <Router>
             <div className="main">
@@ -24,7 +22,7 @@ const Main = ({handleToggleSidebar}) => {
 
                 {/* Corpo da página, a ser construído */}
                 <div>
-                    <p>Bem vindo!</p>
+                    <p>Serviços</p>
 
                     <p>Horários de funcionamento: Segunda à sexta, 7:00 até 18:00</p>
 
@@ -35,4 +33,4 @@ const Main = ({handleToggleSidebar}) => {
     );
 }
 
-export default Main;
+export default Servicos;

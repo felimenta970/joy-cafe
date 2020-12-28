@@ -8,6 +8,8 @@ import SideBar from './SideBar.js';
 
 // Import de páginas
 import Main from './Main.js';
+import Sobre from './pages/sobre/sobre.js';
+import Servicos from './pages/sobre/servicos.js';
 
 import Almoco from './pages/almoco.js';
 
@@ -60,6 +62,20 @@ function App({}) {
 					{/* Almoço */}
 					<Route exact path="/almoco">
 						<Almoco 
+							handleToggleSidebar={handleToggleSidebar}
+						/>
+					</Route>
+
+					{/* Sobre */}
+					<Route exact path="/sobre">
+						<Sobre
+							handleToggleSidebar={handleToggleSidebar}
+						/>
+					</Route>
+
+					{/* Serviços */}
+					<Route exact path="/servicos">
+						<Servicos
 							handleToggleSidebar={handleToggleSidebar}
 						/>
 					</Route>

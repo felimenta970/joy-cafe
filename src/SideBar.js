@@ -32,8 +32,14 @@ const SideBar = ({toggled, handleToggleSidebar}) => {
 							<Link to="/"/>
 						</MenuItem>
 						<SubMenu title="Sobre Nós">
-							<MenuItem>Sobre Nós</MenuItem>
-							<MenuItem>Serviços</MenuItem>
+							<MenuItem>
+								Sobre Nós
+								<Link to="/sobre" />
+							</MenuItem>
+							<MenuItem>
+								Serviços
+								<Link to="/servicos" />
+							</MenuItem>
 						</SubMenu>
 					</Menu>
 				</SidebarHeader>
