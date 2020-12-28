@@ -2,6 +2,8 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 
+import almoco from './assets/almoco-alt.jpg';
+
 // Import icons
 import { FaBars } from 'react-icons/fa';
 
@@ -25,6 +27,9 @@ const Main = ({handleToggleSidebar}) => {
                 {/* Corpo da página, a ser construído */}
                 <div>
                     <p>Bem vindo!</p>
+
+                    <img src={almoco} alt="Foto de prato de comida" className="heroImgMobile" />
+
                     <p>Horários de funcionamento: Segunda à sexta, 7:00 até 18:00</p>
 
                 </div>
