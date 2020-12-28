@@ -21,7 +21,7 @@ const Natural = ({handleToggleSidebar}) => {
 
             <h1 className="categoryName">LANCHES NATURAIS</h1>
 
-            <img src={sand_natural} alt="Foto de prato de comida" className="heroImgMobile" />
+            <img src={sand_natural} alt="Dois lanches naturais com tomate, cebola e queijo" className="heroImgMobile" />
 
 
             {/* Criamos um div para conter a lista de itens */}

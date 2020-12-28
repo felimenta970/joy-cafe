@@ -4,7 +4,7 @@ import { ProSidebar, Menu, MenuItem, SubMenu, SidebarHeader, SidebarContent, Sid
 // Styles
 import './styles/App.scss';
 // import { } from 'react-icons';
-// import joyLogo from './assets/joyLogo.png'
+ import joyLogo from './assets/logo_joy_long.png'
 
 // React e rotas
 import React from 'react';
@@ -26,6 +26,7 @@ const SideBar = ({toggled, handleToggleSidebar}) => {
 				{/* Header */}
 				<SidebarHeader className = "headerSection">
 					<Menu>
+						<img src={joyLogo} className="logoSidebar" alt="Logo Joy Café e Bistrot"/>
 						<MenuItem>
 							Home
 							<Link to="/"/>

@@ -21,7 +21,7 @@ const Omelete = ({handleToggleSidebar}) => {
 
             <h1 className="categoryName">PANQUECAS E OMELETES</h1>
 
-            <img src={omelete} alt="Foto de prato de comida" className="heroImgMobile" />
+            <img src={omelete} alt="Omelete no prato" className="heroImgMobile" />
 
 
             {/* Criamos um div para conter a lista de itens */}

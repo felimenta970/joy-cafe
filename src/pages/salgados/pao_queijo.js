@@ -21,7 +21,7 @@ const PaoQueijo = ({handleToggleSidebar}) => {
 
             <h1 className="categoryName">PÃES DE QUEIJO</h1>
 
-            <img src={pao_queijo} alt="Foto de prato de comida" className="heroImgMobile" />
+            <img src={pao_queijo} alt="Pães de queijo em travessa" className="heroImgMobile" />
 
 
             {/* Criamos um div para conter a lista de itens */}

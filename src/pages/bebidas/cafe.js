@@ -21,7 +21,7 @@ const Cafe = ({handleToggleSidebar}) => {
 
             <h1 className="categoryName">CAFÉS</h1>
 
-            <img src={cafe} alt="Foto de prato de comida" className="heroImgMobile" />
+            <img src={cafe} alt="Xícara de café" className="heroImgMobile" />
 
 
             {/* Criamos um div para conter a lista de itens */}

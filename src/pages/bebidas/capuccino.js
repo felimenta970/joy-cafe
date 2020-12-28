@@ -21,7 +21,7 @@ const Capuccino = ({handleToggleSidebar}) => {
 
             <h1 className="categoryName">CAPUCCINOS</h1>
 
-            <img src={capuccino} alt="Foto de prato de comida" className="heroImgMobile" />
+            <img src={capuccino} alt="Capuccino sendo servido em uma xícara" className="heroImgMobile" />
 
 
             {/* Criamos um div para conter a lista de itens */}

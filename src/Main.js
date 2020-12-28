@@ -3,6 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import almoco from './assets/almoco-alt.jpg';
+import joy_logo from './assets/logo_joy.png';
 
 // Import icons
 import { FaBars } from 'react-icons/fa';
@@ -11,18 +12,15 @@ const Main = ({handleToggleSidebar}) => {
     return (
         <Router>
             <div className="main">
+
+                
                 {/* Ícone para abrir menu, só aparece quando menor md ou menor */}
                 <div className="btn-toggle" onClick={() => handleToggleSidebar(true)}>
                     <FaBars />
-                </div>
-
-                {
-                /* Header, a ser adicionado
-                Transformado em um componente? */
-                }
-                <div>
                     
                 </div>
+
+                
 
                 {/* Corpo da página, a ser construído */}
                 <div>

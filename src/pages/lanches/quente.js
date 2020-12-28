@@ -21,7 +21,7 @@ const Quente = ({handleToggleSidebar}) => {
 
             <h1 className="categoryName">LANCHES QUENTES</h1>
 
-            <img src={lancheQuente} alt="Foto de prato de comida" className="heroImgMobile" />
+            <img src={lancheQuente} alt="Queijo quente com manjericão" className="heroImgMobile" />
 
 
             {/* Criamos um div para conter a lista de itens */}

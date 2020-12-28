@@ -21,7 +21,7 @@ const Refri = ({handleToggleSidebar}) => {
 
             <h1 className="categoryName">REFRIGERANTES E ÁGUA</h1>
 
-            <img src={refri} alt="Foto de lata de Coca Cola" className="heroImgMobile" />
+            <img src={refri} alt="Lata de coca cola no fundo preto" className="heroImgMobile" />
 
             
 
