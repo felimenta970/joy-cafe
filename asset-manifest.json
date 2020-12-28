@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/joy-cafe/static/css/main.5cde9976.chunk.css",
+    "main.css": "/joy-cafe/static/css/main.2ea7d1a4.chunk.css",
     "main.js": "/joy-cafe/static/js/main.62e7d035.chunk.js",
     "main.js.map": "/joy-cafe/static/js/main.62e7d035.chunk.js.map",
     "runtime-main.js": "/joy-cafe/static/js/runtime-main.630eb7f5.js",
@@ -8,7 +8,7 @@
     "static/js/2.a516dbf4.chunk.js": "/joy-cafe/static/js/2.a516dbf4.chunk.js",
     "static/js/2.a516dbf4.chunk.js.map": "/joy-cafe/static/js/2.a516dbf4.chunk.js.map",
     "index.html": "/joy-cafe/index.html",
-    "static/css/main.5cde9976.chunk.css.map": "/joy-cafe/static/css/main.5cde9976.chunk.css.map",
+    "static/css/main.2ea7d1a4.chunk.css.map": "/joy-cafe/static/css/main.2ea7d1a4.chunk.css.map",
     "static/js/2.a516dbf4.chunk.js.LICENSE.txt": "/joy-cafe/static/js/2.a516dbf4.chunk.js.LICENSE.txt",
     "static/media/almoco-alt.7b6a1408.jpg": "/joy-cafe/static/media/almoco-alt.7b6a1408.jpg",
     "static/media/bolo_cenoura.a8dab447.jpg": "/joy-cafe/static/media/bolo_cenoura.a8dab447.jpg",
@@ -28,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.630eb7f5.js",
     "static/js/2.a516dbf4.chunk.js",
-    "static/css/main.5cde9976.chunk.css",
+    "static/css/main.2ea7d1a4.chunk.css",
     "static/js/main.62e7d035.chunk.js"
   ]
 }
