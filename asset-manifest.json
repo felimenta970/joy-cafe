@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/joy-cafe/static/css/main.2ea7d1a4.chunk.css",
-    "main.js": "/joy-cafe/static/js/main.62e7d035.chunk.js",
-    "main.js.map": "/joy-cafe/static/js/main.62e7d035.chunk.js.map",
+    "main.css": "/joy-cafe/static/css/main.666ae269.chunk.css",
+    "main.js": "/joy-cafe/static/js/main.0e371872.chunk.js",
+    "main.js.map": "/joy-cafe/static/js/main.0e371872.chunk.js.map",
     "runtime-main.js": "/joy-cafe/static/js/runtime-main.630eb7f5.js",
     "runtime-main.js.map": "/joy-cafe/static/js/runtime-main.630eb7f5.js.map",
     "static/js/2.a516dbf4.chunk.js": "/joy-cafe/static/js/2.a516dbf4.chunk.js",
     "static/js/2.a516dbf4.chunk.js.map": "/joy-cafe/static/js/2.a516dbf4.chunk.js.map",
     "index.html": "/joy-cafe/index.html",
-    "static/css/main.2ea7d1a4.chunk.css.map": "/joy-cafe/static/css/main.2ea7d1a4.chunk.css.map",
+    "static/css/main.666ae269.chunk.css.map": "/joy-cafe/static/css/main.666ae269.chunk.css.map",
     "static/js/2.a516dbf4.chunk.js.LICENSE.txt": "/joy-cafe/static/js/2.a516dbf4.chunk.js.LICENSE.txt",
     "static/media/almoco-alt.7b6a1408.jpg": "/joy-cafe/static/media/almoco-alt.7b6a1408.jpg",
     "static/media/bolo_cenoura.a8dab447.jpg": "/joy-cafe/static/media/bolo_cenoura.a8dab447.jpg",
@@ -17,6 +17,8 @@
     "static/media/cha.d3fbe8ed.jpg": "/joy-cafe/static/media/cha.d3fbe8ed.jpg",
     "static/media/grilled_cheese.9ab89c2d.jpg": "/joy-cafe/static/media/grilled_cheese.9ab89c2d.jpg",
     "static/media/leites.524181ab.jpg": "/joy-cafe/static/media/leites.524181ab.jpg",
+    "static/media/logo_joy.bee0ef31.png": "/joy-cafe/static/media/logo_joy.bee0ef31.png",
+    "static/media/logo_joy_long.3d99baef.png": "/joy-cafe/static/media/logo_joy_long.3d99baef.png",
     "static/media/omelete.a87b70c3.jpg": "/joy-cafe/static/media/omelete.a87b70c3.jpg",
     "static/media/pao_queijo.247fcd4a.jpg": "/joy-cafe/static/media/pao_queijo.247fcd4a.jpg",
     "static/media/refri.265bf4c3.jpg": "/joy-cafe/static/media/refri.265bf4c3.jpg",
@@ -28,7 +30,7 @@
   "entrypoints": [
     "static/js/runtime-main.630eb7f5.js",
     "static/js/2.a516dbf4.chunk.js",
-    "static/css/main.2ea7d1a4.chunk.css",
-    "static/js/main.62e7d035.chunk.js"
+    "static/css/main.666ae269.chunk.css",
+    "static/js/main.0e371872.chunk.js"
   ]
 }
