@@ -33,7 +33,7 @@ const SideBar = ({toggled, handleToggleSidebar}) => {
 						</MenuItem>
 						<SubMenu title="Sobre Nós">
 							<MenuItem>Sobre Nós</MenuItem>
-							<MenuItem>Serivços</MenuItem>
+							<MenuItem>Serviços</MenuItem>
 						</SubMenu>
 					</Menu>
 				</SidebarHeader>
