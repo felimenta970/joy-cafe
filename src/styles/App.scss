@@ -12,7 +12,7 @@ $sidebar-color: #9ce0d0;
 .pro-sidebar .pro-menu .pro-menu-item {
 
     color: $sidebar-color;
-    opacity: 80%;
+    opacity: 0.8;
     font-size: 20px;
     font-style: italic;   
     
@@ -107,7 +107,7 @@ body {
         height: auto;
         margin-bottom: 20px;
         display: none;
-        opacity: 85%;
+        opacity: 0.85;
     }
 
     .heroImg {
