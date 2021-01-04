@@ -4,7 +4,7 @@ import React from 'react';
 // Import icones
 import { FaBars } from 'react-icons/fa';
 
-import lancheQuente from './../../assets/grilled_cheese.jpg';
+import lancheQuente from './../../assets/mobile/grilled_cheese.jpg';
 
 // Import dados
 import { lancheQuenteItens } from "./../../data/dadosItens.js"; 

@@ -4,7 +4,7 @@ import React from 'react';
 // Import icones
 import { FaBars } from 'react-icons/fa';
 
-import cha from './../../assets/cha.jpg';
+import cha from './../../assets/mobile/cha.jpg';
 
 // Import dados
 import { chaItens } from "./../../data/dadosItens.js"; 

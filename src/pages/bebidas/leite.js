@@ -4,7 +4,7 @@ import React from 'react';
 // Import icones
 import { FaBars } from 'react-icons/fa';
 
-import leite from './../../assets/leites.jpg';
+import leite from './../../assets/mobile/leites.jpg';
 
 // Import dados
 import { leiteItens } from "./../../data/dadosItens.js"; 

@@ -4,7 +4,7 @@ import React from 'react';
 // Import icones
 import { FaBars } from 'react-icons/fa';
 
-import omelete from './../assets/omelete.jpg';
+import omelete from './../assets/mobile/omelete.jpg';
 
 // Import dados
 import { panquecaOmeleteItens } from "../data/dadosItens.js"; 

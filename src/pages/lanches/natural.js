@@ -4,7 +4,7 @@ import React from 'react';
 // Import icones
 import { FaBars } from 'react-icons/fa';
 
-import sand_natural from './../../assets/sand_natural.jpg';
+import sand_natural from './../../assets/mobile/sand_natural.jpg';
 
 // Import dados
 import { lancheNaturalItens } from "./../../data/dadosItens.js"; 

@@ -4,7 +4,7 @@ import React from 'react';
 // Import icones
 import { FaBars } from 'react-icons/fa';
 
-import capuccino from './../../assets/cappuccino.jpg';
+import capuccino from './../../assets/mobile/cappuccino.jpg';
 
 // Import dados
 import { capuccinoItens } from "./../../data/dadosItens.js"; 

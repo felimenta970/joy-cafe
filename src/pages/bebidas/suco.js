@@ -4,7 +4,7 @@ import React from 'react';
 // Import icones
 import { FaBars } from 'react-icons/fa';
 
-import suco from './../../assets/suco.jpg';
+import suco from './../../assets/mobile/suco.jpg';
 
 // Import dados
 import { sucoItens } from "./../../data/dadosItens.js"; 

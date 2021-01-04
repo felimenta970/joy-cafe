@@ -5,7 +5,7 @@ import React from 'react';
 import { FaBars } from 'react-icons/fa';
 
 
-import refri from './../../assets/refri.jpg';
+import refri from './../../assets/mobile/refri.jpg';
 
 // Import dados
 import { refriItens } from "./../../data/dadosItens.js"; 

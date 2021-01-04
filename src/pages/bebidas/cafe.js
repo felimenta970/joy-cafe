@@ -4,7 +4,7 @@ import React from 'react';
 // Import icones
 import { FaBars } from 'react-icons/fa';
 
-import cafe from './../../assets/cafe.jpg';
+import cafe from './../../assets/mobile/cafe.jpg';
 
 // Import dados
 import { cafeItens } from "./../../data/dadosItens.js"; 

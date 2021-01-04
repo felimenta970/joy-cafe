@@ -2,9 +2,6 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import almoco from './assets/almoco-alt.jpg';
-import joy_logo from './assets/logo_joy.png';
-
 // Import icons
 import { FaBars } from 'react-icons/fa';
 

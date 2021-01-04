@@ -4,7 +4,7 @@ import React from 'react';
 // Import icones
 import { FaBars } from 'react-icons/fa';
 
-import salgado from './../../assets/salgado.jpg';
+import salgado from './../../assets/mobile/salgado.jpg';
 
 // Import dados
 import { salgadosItens } from "./../../data/dadosItens.js"; 

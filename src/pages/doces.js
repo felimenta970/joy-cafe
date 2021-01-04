@@ -4,7 +4,7 @@ import React from 'react';
 // Import icones
 import { FaBars } from 'react-icons/fa';
 
-import doce from './../assets/bolo_cenoura.jpg';
+import doce from './../assets/mobile/bolo_cenoura.jpg';
 
 // Import dados
 import { docesItens } from "../data/dadosItens.js"; 

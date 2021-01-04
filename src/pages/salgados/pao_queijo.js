@@ -4,7 +4,7 @@ import React from 'react';
 // Import icones
 import { FaBars } from 'react-icons/fa';
 
-import pao_queijo from './../../assets/pao_queijo.jpg';
+import pao_queijo from './../../assets/mobile/pao_queijo.jpg';
 
 // Import dados
 import { paoQueijoItens } from "./../../data/dadosItens.js"; 
