@@ -40,7 +40,7 @@ const Salgado = ({handleToggleSidebar}) => {
                     </Col>
 
                     <Col lg="5">
-                        <img src={salgadoBig} alt="Foto de prato de comida" className="heroImg" />
+                        <img src={salgadoBig} alt="Croassaint sendo polvilhado" className="heroImg" />
                         
                     </Col>
                 </Row>

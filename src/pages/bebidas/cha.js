@@ -40,7 +40,7 @@ const Cha = ({handleToggleSidebar}) => {
                     </Col>
 
                     <Col lg="5">
-                        <img src={chaBig} alt="Foto de prato de comida" className="heroImg" />
+                        <img src={chaBig} alt="Xícara de chá em mesa de madeira" className="heroImg" />
                         
                     </Col>
                 </Row>

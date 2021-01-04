@@ -40,7 +40,7 @@ const Cafe = ({handleToggleSidebar}) => {
                     </Col>
 
                     <Col lg="5">
-                        <img src={cafeBig} alt="Foto de prato de comida" className="heroImg" />
+                        <img src={cafeBig} alt="Xícara de café" className="heroImg" />
                         
                     </Col>
                 </Row>

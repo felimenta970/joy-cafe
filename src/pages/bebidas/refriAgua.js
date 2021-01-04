@@ -41,7 +41,7 @@ const Refri = ({handleToggleSidebar}) => {
                     </Col>
 
                     <Col lg="5">
-                        <img src={refriBig} alt="Foto de prato de comida" className="heroImg" />
+                        <img src={refriBig} alt="Lata de coca cola no fundo preto" className="heroImg" />
                         
                     </Col>
                 </Row>

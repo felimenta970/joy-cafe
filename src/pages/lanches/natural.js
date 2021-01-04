@@ -40,7 +40,7 @@ const Natural = ({handleToggleSidebar}) => {
                     </Col>
 
                     <Col lg="5">
-                        <img src={sand_naturalBig} alt="Foto de prato de comida" className="heroImg" />
+                        <img src={sand_naturalBig} alt="Dois lanches naturais com tomate, cebola e queijo" className="heroImg" />
                         
                     </Col>
                 </Row>

@@ -40,7 +40,7 @@ const Quente = ({handleToggleSidebar}) => {
                     </Col>
 
                     <Col lg="5">
-                        <img src={lancheQuenteBig} alt="Foto de prato de comida" className="heroImg" />
+                        <img src={lancheQuenteBig} alt="Queijo quente com manjericão" className="heroImg" />
                         
                     </Col>
                 </Row>

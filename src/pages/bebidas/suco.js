@@ -40,7 +40,7 @@ const Suco = ({handleToggleSidebar}) => {
                     </Col>
 
                     <Col lg="5">
-                        <img src={sucoBig} alt="Foto de prato de comida" className="heroImg" />
+                        <img src={sucoBig} alt="Suco de laranja no copo e laranjas ao fundo" className="heroImg" />
                         
                     </Col>
                 </Row>

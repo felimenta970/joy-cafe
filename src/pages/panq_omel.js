@@ -40,7 +40,7 @@ const Omelete = ({handleToggleSidebar}) => {
                     </Col>
 
                     <Col lg="5">
-                        <img src={omeleteBig} alt="Foto de prato de comida" className="heroImg" />
+                        <img src={omeleteBig} alt="Omelete no prato" className="heroImg" />
                         
                     </Col>
                 </Row>
