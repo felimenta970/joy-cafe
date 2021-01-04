@@ -1,10 +1,14 @@
 // Import react
 import React from 'react';
 
+import { Container, Row, Col } from "react-bootstrap";
+
 // Import icones
 import { FaBars } from 'react-icons/fa';
 
 import cha from './../../assets/mobile/cha.jpg';
+
+import List from './../../List.js';
 
 // Import dados
 import { chaItens } from "./../../data/dadosItens.js"; 
@@ -25,33 +29,22 @@ const Cha = ({handleToggleSidebar}) => {
 
 
             {/* Criamos um div para conter a lista de itens */}
-            <div className="allItens">
+            <Container fluid="true">
+                
+                <Row>
+                    <Col xs lg="7">
+                    {/* Criamos um div para conter a lista de itens */}
+                        <List dataItem={chaItens} />
 
+                    </Col>
 
-                {/* Do arquivo, pegamos os dados e uma chave para cada um */}
-                {chaItens.map((data, key) => {
-                    return (
-                        {/* Exibimos o conteúdo e damos um nome de classe para cada um */},
-                        <div className="itemGroup" key={key}>
+                    <Col lg="5">
+                        {/* <img src={almocoBig} alt="Foto de prato de comida" className="heroImg" /> */}
+                        
+                    </Col>
+                </Row>
 
-                            <div className="itemName">
-                                {data.itemName}
-                            </div>
-
-
-                            <div className="itemDesc">
-                                {data.itemDesc}
-                            </div>
-
-                            <div className="itemPreco">
-								{data.itemPreco}
-							</div>
-
-                        </div>
-                    );
-                })}
-
-            </div>
+            </Container>
 
         </div>
     );

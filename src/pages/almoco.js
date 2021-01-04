@@ -30,16 +30,19 @@ const Almoco = ({handleToggleSidebar}) => {
 
 
             <Container fluid="true">
-            <Row>
-                <Col xs lg="7">
-                {/* Criamos um div para conter a lista de itens */}
-                    <List dataItem={almocoItens} />
-                </Col>
+                
+                <Row>
+                    <Col xs lg="7">
+                    {/* Criamos um div para conter a lista de itens */}
+                        <List dataItem={almocoItens} />
 
-                <Col lg="5">
-                <img src={almocoBig} alt="Foto de prato de comida" className="heroImg" />
-                </Col>
-            </Row>
+                    </Col>
+
+                    <Col lg="5">
+                        <img src={almocoBig} alt="Foto de prato de comida" className="heroImg" />
+                        
+                    </Col>
+                </Row>
 
             </Container>
 

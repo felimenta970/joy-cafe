@@ -1,10 +1,14 @@
 // Import react
 import React from 'react';
 
+import { Container, Row, Col } from "react-bootstrap";
+
 // Import icones
 import { FaBars } from 'react-icons/fa';
 
 import cafe from './../../assets/mobile/cafe.jpg';
+
+import List from './../../List.js';
 
 // Import dados
 import { cafeItens } from "./../../data/dadosItens.js"; 
@@ -25,33 +29,22 @@ const Cafe = ({handleToggleSidebar}) => {
 
 
             {/* Criamos um div para conter a lista de itens */}
-            <div className="allItens">
+            <Container fluid="true">
+                
+                <Row>
+                    <Col xs lg="7">
+                    {/* Criamos um div para conter a lista de itens */}
+                        <List dataItem={cafeItens} />
 
+                    </Col>
 
-                {/* Do arquivo, pegamos os dados e uma chave para cada um */}
-                {cafeItens.map((data, key) => {
-                    return (
-                        {/* Exibimos o conteúdo e damos um nome de classe para cada um */},
-                        <div className="itemGroup" key={key}>
+                    <Col lg="5">
+                        {/* <img src={almocoBig} alt="Foto de prato de comida" className="heroImg" /> */}
+                        
+                    </Col>
+                </Row>
 
-                            <div className="itemName">
-                                {data.itemName}
-                            </div>
-
-
-                            <div className="itemDesc">
-                                {data.itemDesc}
-                            </div>
-
-                            <div className="itemPreco">
-								{data.itemPreco}
-							</div>
-
-                        </div>
-                    );
-                })}
-
-            </div>
+            </Container>
 
         </div>
     );
