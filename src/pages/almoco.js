@@ -26,7 +26,6 @@ const Almoco = ({handleToggleSidebar}) => {
 
             <h1 className="categoryName">ALMOÇO</h1>
 
-            <img src={almoco} alt="Foto de prato de comida" className="heroImgMobile" />
 
 
             <Container fluid="true">
@@ -34,6 +33,7 @@ const Almoco = ({handleToggleSidebar}) => {
                 <Row>
                     <Col xs lg="7">
                     {/* Criamos um div para conter a lista de itens */}
+                        <img src={almoco} alt="Foto de prato de comida" className="heroImgMobile" />
                         <List dataItem={almocoItens} />
 
                     </Col>
