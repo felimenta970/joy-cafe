@@ -7,7 +7,7 @@ import { FaBars } from 'react-icons/fa';
 import { Container, Row, Col } from "react-bootstrap";
 
 import almoco from './../assets/mobile/almoco-alt.jpg';
-import almocoBig from './../assets/almoco.jpg';
+import almocoBig from './../assets/desktop/almoco.jpg';
 
 import List from './../List.js';
 
