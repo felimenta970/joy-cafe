@@ -7,6 +7,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { FaBars } from 'react-icons/fa';
 
 import leite from './../../assets/mobile/leites.jpg';
+import leiteBig from './../../assets/desktop/leites.jpg';
 
 import List from './../../List.js';
 
@@ -39,7 +40,7 @@ const Leite = ({handleToggleSidebar}) => {
                     </Col>
 
                     <Col lg="5">
-                        {/* <img src={almocoBig} alt="Foto de prato de comida" className="heroImg" /> */}
+                        <img src={leiteBig} alt="Foto de prato de comida" className="heroImg" />
                         
                     </Col>
                 </Row>

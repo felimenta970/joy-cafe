@@ -9,6 +9,7 @@ import List from './../../List.js';
 import { FaBars } from 'react-icons/fa';
 
 import salgado from './../../assets/mobile/salgado.jpg';
+import salgadoBig from './../../assets/desktop/salgado.jpg';
 
 // Import dados
 import { salgadosItens } from "./../../data/dadosItens.js"; 
@@ -39,7 +40,7 @@ const Salgado = ({handleToggleSidebar}) => {
                     </Col>
 
                     <Col lg="5">
-                        {/* <img src={almocoBig} alt="Foto de prato de comida" className="heroImg" /> */ }
+                        <img src={salgadoBig} alt="Foto de prato de comida" className="heroImg" />
                         
                     </Col>
                 </Row>

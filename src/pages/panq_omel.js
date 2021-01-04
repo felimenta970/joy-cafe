@@ -9,6 +9,7 @@ import List from './../List.js';
 import { FaBars } from 'react-icons/fa';
 
 import omelete from './../assets/mobile/omelete.jpg';
+import omeleteBig from './../assets/desktop/omelete.jpg';
 
 // Import dados
 import { panquecaOmeleteItens } from "../data/dadosItens.js"; 
@@ -39,7 +40,7 @@ const Omelete = ({handleToggleSidebar}) => {
                     </Col>
 
                     <Col lg="5">
-                        {/* <img src={almocoBig} alt="Foto de prato de comida" className="heroImg" /> */}
+                        <img src={omeleteBig} alt="Foto de prato de comida" className="heroImg" />
                         
                     </Col>
                 </Row>

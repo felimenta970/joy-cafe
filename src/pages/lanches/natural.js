@@ -9,6 +9,7 @@ import List from './../../List.js';
 import { FaBars } from 'react-icons/fa';
 
 import sand_natural from './../../assets/mobile/sand_natural.jpg';
+import sand_naturalBig from './../../assets/desktop/sand_natural.jpg';
 
 // Import dados
 import { lancheNaturalItens } from "./../../data/dadosItens.js"; 
@@ -39,7 +40,7 @@ const Natural = ({handleToggleSidebar}) => {
                     </Col>
 
                     <Col lg="5">
-                        {/* <img src={almocoBig} alt="Foto de prato de comida" className="heroImg" /> */}
+                        <img src={sand_naturalBig} alt="Foto de prato de comida" className="heroImg" />
                         
                     </Col>
                 </Row>

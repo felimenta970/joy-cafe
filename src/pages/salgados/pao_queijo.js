@@ -9,6 +9,7 @@ import List from './../../List.js';
 import { FaBars } from 'react-icons/fa';
 
 import pao_queijo from './../../assets/mobile/pao_queijo.jpg';
+import pao_queijoBig from './../../assets/desktop/pao_queijo.jpg';
 
 // Import dados
 import { paoQueijoItens } from "./../../data/dadosItens.js"; 
@@ -39,7 +40,7 @@ const PaoQueijo = ({handleToggleSidebar}) => {
                     </Col>
 
                     <Col lg="5">
-                        {/* <img src={almocoBig} alt="Foto de prato de comida" className="heroImg" /> */}
+                        <img src={pao_queijoBig} alt="Foto de prato de comida" className="heroImg" />
                         
                     </Col>
                 </Row>

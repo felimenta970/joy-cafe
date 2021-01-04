@@ -9,6 +9,7 @@ import List from './../../List.js';
 import { FaBars } from 'react-icons/fa';
 
 import lancheQuente from './../../assets/mobile/grilled_cheese.jpg';
+import lancheQuenteBig from './../../assets/desktop/grilled_cheese.jpg';
 
 // Import dados
 import { lancheQuenteItens } from "./../../data/dadosItens.js"; 
@@ -39,7 +40,7 @@ const Quente = ({handleToggleSidebar}) => {
                     </Col>
 
                     <Col lg="5">
-                        {/* <img src={almocoBig} alt="Foto de prato de comida" className="heroImg" /> */}
+                        <img src={lancheQuenteBig} alt="Foto de prato de comida" className="heroImg" />
                         
                     </Col>
                 </Row>

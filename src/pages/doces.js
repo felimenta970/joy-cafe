@@ -9,6 +9,7 @@ import List from './../List.js';
 import { FaBars } from 'react-icons/fa';
 
 import doce from './../assets/mobile/bolo_cenoura.jpg';
+import doceBig from './../assets/desktop/bolo_cenoura.jpg';
 
 // Import dados
 import { docesItens } from "../data/dadosItens.js"; 
@@ -39,7 +40,7 @@ const Doces = ({handleToggleSidebar}) => {
                     </Col>
 
                     <Col lg="5">
-                        {/* <img src={almocoBig} alt="Foto de prato de comida" className="heroImg" /> */}
+                        <img src={doceBig} alt="Foto de prato de comida" className="heroImg" />
                         
                     </Col>
                 </Row>

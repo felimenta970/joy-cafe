@@ -7,6 +7,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { FaBars } from 'react-icons/fa';
 
 import cha from './../../assets/mobile/cha.jpg';
+import chaBig from './../../assets/desktop/cha.jpg';
 
 import List from './../../List.js';
 
@@ -39,7 +40,7 @@ const Cha = ({handleToggleSidebar}) => {
                     </Col>
 
                     <Col lg="5">
-                        {/* <img src={almocoBig} alt="Foto de prato de comida" className="heroImg" /> */}
+                        <img src={chaBig} alt="Foto de prato de comida" className="heroImg" />
                         
                     </Col>
                 </Row>

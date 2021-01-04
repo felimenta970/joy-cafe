@@ -10,6 +10,7 @@ import { FaBars } from 'react-icons/fa';
 
 
 import refri from './../../assets/mobile/refri.jpg';
+import refriBig from './../../assets/desktop/refri.jpg';
 
 // Import dados
 import { refriItens } from "./../../data/dadosItens.js"; 
@@ -40,7 +41,7 @@ const Refri = ({handleToggleSidebar}) => {
                     </Col>
 
                     <Col lg="5">
-                        {/* <img src={almocoBig} alt="Foto de prato de comida" className="heroImg" /> */}
+                        <img src={refriBig} alt="Foto de prato de comida" className="heroImg" />
                         
                     </Col>
                 </Row>
