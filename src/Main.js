@@ -5,6 +5,14 @@ import { BrowserRouter as Router } from 'react-router-dom';
 // Import icons
 import { FaBars } from 'react-icons/fa';
 
+import Map from './Maps.js';
+
+const location = {
+    address: 'R. Joaquim Antônio Nascimento, 156',
+    lat: -21.210999733825197,
+    lng: -47.81263235889447,
+  }
+
 const Main = ({handleToggleSidebar}) => {
     return (
         <Router>
@@ -26,6 +34,8 @@ const Main = ({handleToggleSidebar}) => {
                     <p>Horários de funcionamento: Segunda à sexta, 7:00 até 18:00</p>
 
                 </div>
+
+                <Map location = {location} zoomLevel = {17} />
                 
             </div>
         </Router>

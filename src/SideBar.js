@@ -152,7 +152,7 @@ const SideBar = ({toggled, handleToggleSidebar}) => {
 				{/* Footer */}
 				<SidebarFooter className="footerSection">
 					<div className = "footer">
-						Copyright
+						Felipe Pimenta @ 2021
 					</div>
 				</SidebarFooter>
 				

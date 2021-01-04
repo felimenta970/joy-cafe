@@ -73,6 +73,30 @@ const Sobre = ({handleToggleSidebar}) => {
                             </Col>
                         </Row>
 
+                        <br/>
+
+                        <h1 className="categoryName">MISSÃO, VALORES E VISÃO</h1>
+
+                        <Row>
+                            <Col xs lg="7">
+                            {/* Criamos um div para conter a lista de itens */}
+                                <img src={almoco} alt="Foto de prato de comida" className="heroImgMobile" />
+                                <div>
+                                    O Joy café foi fundado em xxxxxxxxxx
+                                </div>
+
+                                <div>
+                                    O Joy café foi fundado em xxxxxxxxxx
+                                </div>
+
+                            </Col>
+
+                            <Col lg="5">
+                                <img src={almoco} alt="Foto de prato de comida" className="heroImg" />
+                                
+                            </Col>
+                        </Row>
+
             </Container>
 
                 </div>
