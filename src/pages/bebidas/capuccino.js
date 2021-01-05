@@ -1,6 +1,7 @@
 // Import react
 import React from 'react';
 
+// Import do bootstrap
 import { Container, Row, Col } from "react-bootstrap";
 
 // Import icones

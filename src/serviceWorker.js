@@ -1,3 +1,5 @@
+// Função para uso de PWA
+
 export const registerServiceWorker = () => {
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function () {

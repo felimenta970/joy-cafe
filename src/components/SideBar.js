@@ -130,6 +130,7 @@ const SideBar = ({toggled, handleToggleSidebar}) => {
 
 						</SubMenu>
 
+						
 						<MenuItem>
 							Panquecas e Omeletes
 							<Link to="/panq_omel" />
@@ -149,7 +150,7 @@ const SideBar = ({toggled, handleToggleSidebar}) => {
 
 				} </SidebarContent>
 
-				{/* Footer */}
+				{/* Footer da Sidebar */}
 				<SidebarFooter className="footerSection">
 					<div className = "footer">
 						Felipe Pimenta @ 2021

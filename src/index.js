@@ -9,8 +9,10 @@ import './styles/index.css';
 // Import do código
 import App from './App';
 
+// Import da função de serviceWorker para que o app possa ser instalado como PWA
 import { registerServiceWorker } from './serviceWorker';
 
+// Chamada para funcionamento de PWA
 registerServiceWorker();
 
 ReactDOM.render(

@@ -34,7 +34,12 @@ const Main = ({handleToggleSidebar}) => {
                     <p>Horários de funcionamento: Segunda à sexta, 7:00 até 18:00</p>
 
                 </div>
+
+                {/* Footer da página principal */}
+
                 <div className="footerMain">
+
+                    {/* Componente mapa, que contém o mapa da localização do estabelecimento */}
                     <Map location = {location} zoomLevel = {18} />
                 </div>
                 
