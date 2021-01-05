@@ -1,6 +1,6 @@
 {
   "short_name": "Joy Café",
-  "name": "Cardápio Joy Café & Bistrot",
+  "name": "Joy Café & Bistrot",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#303030",
+  "background_color": "#87BFB2"
 }
