@@ -1,15 +1,15 @@
 // Import react
 import React from 'react';
 
-import { Container, Row, Col } from "react-bootstrap";
-
-import List from './../../components/List.js';
-
 // Import icones
 import { FaBars } from 'react-icons/fa';
 
+// Import imagens
 import suco from './../../assets/mobile/suco.jpg';
 import sucoBig from './../../assets/desktop/suco.jpg';
+
+// Import Page Layout
+import PageLayout from '../../components/pageLayout.js';
 
 // Import dados
 import { sucoItens } from "./../../data/dadosItens.js"; 
@@ -23,29 +23,14 @@ const Suco = ({handleToggleSidebar}) => {
                 <FaBars />
             </div>
 
-
-            <h1 className="categoryName">SUCOS</h1>
-
-            <img src={suco} alt="Suco de laranja no copo e laranjas ao fundo" className="heroImgMobile" />
-
-
-            {/* Criamos um div para conter a lista de itens */}
-            <Container fluid="true">
-                
-                <Row>
-                    <Col xs lg="7">
-                    {/* Criamos um div para conter a lista de itens */}
-                        <List dataItem={sucoItens} />
-
-                    </Col>
-
-                    <Col lg="5">
-                        <img src={sucoBig} alt="Suco de laranja no copo e laranjas ao fundo" className="heroImg" />
-                        
-                    </Col>
-                </Row>
-
-            </Container>
+            {/* Chamada de layout de página */}
+            <PageLayout
+                image={suco}
+                imageBig={sucoBig}
+                dados={sucoItens}
+                alt="Suco de laranja no copo e laranjas ao fundo"
+                title="SUCOS"
+            />
 
         </div>
     );

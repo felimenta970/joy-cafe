@@ -1,15 +1,15 @@
 // Import react
 import React from 'react';
 
-import { Container, Row, Col } from "react-bootstrap";
-
 // Import icones
 import { FaBars } from 'react-icons/fa';
 
+// Import imagens
 import cha from './../../assets/mobile/cha.jpg';
 import chaBig from './../../assets/desktop/cha.jpg';
 
-import List from './../../components/List.js';
+// Import Page Layout
+import PageLayout from '../../components/pageLayout.js';
 
 // Import dados
 import { chaItens } from "./../../data/dadosItens.js"; 
@@ -23,29 +23,14 @@ const Cha = ({handleToggleSidebar}) => {
                 <FaBars />
             </div>
 
-
-            <h1 className="categoryName">CHÁS</h1>
-
-            <img src={cha} alt="Xícara de chá em mesa de madeira" className="heroImgMobile" />
-
-
-            {/* Criamos um div para conter a lista de itens */}
-            <Container fluid="true">
-                
-                <Row>
-                    <Col xs lg="7">
-                    {/* Criamos um div para conter a lista de itens */}
-                        <List dataItem={chaItens} />
-
-                    </Col>
-
-                    <Col lg="5">
-                        <img src={chaBig} alt="Xícara de chá em mesa de madeira" className="heroImg" />
-                        
-                    </Col>
-                </Row>
-
-            </Container>
+            {/* Chamada de layout de página */}
+            <PageLayout
+                image={cha}
+                imageBig={chaBig}
+                dados={chaItens}
+                alt="Xícara de chá em mesa de madeira"
+                title="CHÁS"
+            />
 
         </div>
     );

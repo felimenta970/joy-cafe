@@ -1,16 +1,15 @@
 // Import react
 import React from 'react';
 
-// Import do bootstrap
-import { Container, Row, Col } from "react-bootstrap";
-
 // Import icones
 import { FaBars } from 'react-icons/fa';
 
+// Import imagens
 import capuccino from './../../assets/mobile/cappuccino.jpg';
 import capuccinoBig from './../../assets/desktop/cappuccino.jpg';
 
-import List from './../../components/List.js';
+// Import Page Layout
+import PageLayout from '../../components/pageLayout.js';
 
 // Import dados
 import { capuccinoItens } from "./../../data/dadosItens.js"; 
@@ -24,29 +23,14 @@ const Capuccino = ({handleToggleSidebar}) => {
                 <FaBars />
             </div>
 
-
-            <h1 className="categoryName">CAPUCCINOS</h1>
-
-            <img src={capuccino} alt="Capuccino sendo servido em uma xícara" className="heroImgMobile" />
-
-
-            {/* Criamos um div para conter a lista de itens */}
-            <Container fluid="true">
-                
-                <Row>
-                    <Col xs lg="7">
-                    {/* Criamos um div para conter a lista de itens */}
-                        <List dataItem={capuccinoItens} />
-
-                    </Col>
-
-                    <Col lg="5">
-                        <img src={capuccinoBig} alt="Capuccino sendo servido em uma xícara" className="heroImg" />
-                        
-                    </Col>
-                </Row>
-
-            </Container>
+            {/* Chamada de layout de página */}
+            <PageLayout
+                image={capuccino}
+                imageBig={capuccinoBig}
+                dados={capuccinoItens}
+                alt="Copo de capuccino"
+                title="CAPUCCINOS"
+            />
 
         </div>
     );

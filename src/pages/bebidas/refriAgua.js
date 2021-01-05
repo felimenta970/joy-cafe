@@ -1,16 +1,15 @@
 // Import react
 import React from 'react';
 
-import { Container, Row, Col } from "react-bootstrap";
-
-import List from './../../components/List.js';
-
 // Import icones
 import { FaBars } from 'react-icons/fa';
 
-
+// Import imagens
 import refri from './../../assets/mobile/refri.jpg';
 import refriBig from './../../assets/desktop/refri.jpg';
+
+// Import Page Layout
+import PageLayout from '../../components/pageLayout.js';
 
 // Import dados
 import { refriItens } from "./../../data/dadosItens.js"; 
@@ -23,30 +22,14 @@ const Refri = ({handleToggleSidebar}) => {
                 <FaBars />
             </div>
 
-
-            <h1 className="categoryName">REFRIGERANTES E ÁGUA</h1>
-
-            <img src={refri} alt="Lata de coca cola no fundo preto" className="heroImgMobile" />
-
-            
-
-            {/* Criamos um div para conter a lista de itens */}
-            <Container fluid="true">
-                
-                <Row>
-                    <Col xs lg="7">
-                    {/* Criamos um div para conter a lista de itens */}
-                        <List dataItem={refriItens} />
-
-                    </Col>
-
-                    <Col lg="5">
-                        <img src={refriBig} alt="Lata de coca cola no fundo preto" className="heroImg" />
-                        
-                    </Col>
-                </Row>
-
-            </Container>
+            {/* Chamada de layout de página */}
+            <PageLayout
+                image={refri}
+                imageBig={refriBig}
+                dados={refriItens}
+                alt="Lata de coca cola no fundo preto"
+                title="REFRIGERANTES E ÁGUA"
+            />
 
         </div>
     );

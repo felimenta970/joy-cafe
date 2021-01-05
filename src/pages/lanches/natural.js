@@ -1,15 +1,15 @@
 // Import react
 import React from 'react';
 
-import { Container, Row, Col } from "react-bootstrap";
-
-import List from './../../components/List.js';
-
 // Import icones
 import { FaBars } from 'react-icons/fa';
 
+// Import imagens
 import sand_natural from './../../assets/mobile/sand_natural.jpg';
 import sand_naturalBig from './../../assets/desktop/sand_natural.jpg';
+
+// Import Page Layout
+import PageLayout from '../../components/pageLayout.js';
 
 // Import dados
 import { lancheNaturalItens } from "./../../data/dadosItens.js"; 
@@ -23,29 +23,14 @@ const Natural = ({handleToggleSidebar}) => {
                 <FaBars />
             </div>
 
-
-            <h1 className="categoryName">LANCHES NATURAIS</h1>
-
-            <img src={sand_natural} alt="Dois lanches naturais com tomate, cebola e queijo" className="heroImgMobile" />
-
-
-            {/* Criamos um div para conter a lista de itens */}
-            <Container fluid="true">
-                
-                <Row>
-                    <Col xs lg="7">
-                    {/* Criamos um div para conter a lista de itens */}
-                        <List dataItem={lancheNaturalItens} />
-
-                    </Col>
-
-                    <Col lg="5">
-                        <img src={sand_naturalBig} alt="Dois lanches naturais com tomate, cebola e queijo" className="heroImg" />
-                        
-                    </Col>
-                </Row>
-
-            </Container>
+            {/* Chamada de layout de página */}
+            <PageLayout
+                image={sand_natural}
+                imageBig={sand_naturalBig}
+                dados={lancheNaturalItens}
+                alt="Dois lanches naturais com tomate, cebola e queijo"
+                title="LANCHES NATURAIS"
+            />
 
         </div>
     );

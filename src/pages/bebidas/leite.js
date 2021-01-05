@@ -1,15 +1,15 @@
 // Import react
 import React from 'react';
 
-import { Container, Row, Col } from "react-bootstrap";
-
 // Import icones
 import { FaBars } from 'react-icons/fa';
 
+// Import imagens
 import leite from './../../assets/mobile/leites.jpg';
 import leiteBig from './../../assets/desktop/leites.jpg';
 
-import List from './../../components/List.js';
+// Import Page Layout
+import PageLayout from '../../components/pageLayout.js';
 
 // Import dados
 import { leiteItens } from "./../../data/dadosItens.js"; 
@@ -23,29 +23,14 @@ const Leite = ({handleToggleSidebar}) => {
                 <FaBars />
             </div>
 
-
-            <h1 className="categoryName">LEITE</h1>
-
-            <img src={leite} alt="Chocolate quente em uma xícara" className="heroImgMobile" />
-
-
-            {/* Criamos um div para conter a lista de itens */}
-            <Container fluid="true">
-                
-                <Row>
-                    <Col xs lg="7">
-                    {/* Criamos um div para conter a lista de itens */}
-                        <List dataItem={leiteItens} />
-
-                    </Col>
-
-                    <Col lg="5">
-                        <img src={leiteBig} alt="Chocolate quente em uma xícara" className="heroImg" />
-                        
-                    </Col>
-                </Row>
-
-            </Container>
+            {/* Chamada de layout de página */}
+            <PageLayout
+                image={leite}
+                imageBig={leiteBig}
+                dados={leiteItens}
+                alt="Chocolate quente em uma xícara"
+                title="LEITES"
+            />
 
         </div>
     );

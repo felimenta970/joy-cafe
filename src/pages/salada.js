@@ -1,15 +1,15 @@
 // Import react
 import React from 'react';
 
-import { Container, Row, Col } from "react-bootstrap";
-
-import List from './../components/List.js';
-
 // Import icones
 import { FaBars } from 'react-icons/fa';
 
+// Import imagens
 import salada from './../assets/mobile/salada.jpg';
 import saladaBig from './../assets/desktop/salada.jpg';
+
+// Import Page Layout
+import PageLayout from '../components/pageLayout.js';
 
 // Import dados
 import { saladaItens } from "../data/dadosItens.js"; 
@@ -23,29 +23,14 @@ const Salada = ({handleToggleSidebar}) => {
                 <FaBars />
             </div>
 
-
-            <h1 className="categoryName">SALADAS</h1>
-
-            <img src={salada} alt="Salada no prato" className="heroImgMobile" />
-
-
-            {/* Criamos um div para conter a lista de itens */}
-            <Container fluid="true">
-                
-                <Row>
-                    <Col xs lg="7">
-                    {/* Criamos um div para conter a lista de itens */}
-                        <List dataItem={saladaItens} />
-
-                    </Col>
-
-                    <Col lg="5">
-                        <img src={saladaBig} alt="Salada no prato" className="heroImg" />
-                        
-                    </Col>
-                </Row>
-
-            </Container>
+            {/* Chamada de layout de página */}
+            <PageLayout
+                image={salada}
+                imageBig={saladaBig}
+                dados={saladaItens}
+                alt="Salada no prato"
+                title="SALADAS"
+            />
 
         </div>
     );
