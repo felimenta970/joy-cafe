@@ -215,12 +215,12 @@ body {
   .pin {
     display: flex;
     align-items: center;
-    width: 180px;
+    width: 50px;
     color: var(--main-blue);
   }
   
   .pin-icon {
-    font-size: 4rem;
+    font-size: 20px;
   }
   
   .pin-text {
@@ -242,6 +242,6 @@ body {
     }
   
     .pin-icon {
-      font-size: 10vw;
+      font-size: 2vw;
     }
   }
