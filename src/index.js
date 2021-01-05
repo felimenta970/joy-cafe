@@ -9,6 +9,9 @@ import './styles/index.css';
 // Import do código
 import App from './App';
 
+import { registerServiceWorker } from './serviceWorker';
+
+registerServiceWorker();
 
 ReactDOM.render(
   //<React.StrictMode>
