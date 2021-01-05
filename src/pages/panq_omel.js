@@ -3,7 +3,7 @@ import React from 'react';
 
 import { Container, Row, Col } from "react-bootstrap";
 
-import List from './../List.js';
+import List from './../components/List.js';
 
 // Import icones
 import { FaBars } from 'react-icons/fa';

@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 // Import icons
 import { FaBars } from 'react-icons/fa';
 
-import Map from './Maps.js';
+import Map from './components/Maps.js';
 
 const location = {
     address: 'R. Joaquim Antônio Nascimento, 156',
@@ -25,7 +25,7 @@ const Main = ({handleToggleSidebar}) => {
                     
                 </div>
 
-                
+                <h1 className="categoryName">ALMOÇO</h1> 
 
                 {/* Corpo da página, a ser construído */}
                 <div>

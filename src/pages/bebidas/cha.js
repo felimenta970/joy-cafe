@@ -9,7 +9,7 @@ import { FaBars } from 'react-icons/fa';
 import cha from './../../assets/mobile/cha.jpg';
 import chaBig from './../../assets/desktop/cha.jpg';
 
-import List from './../../List.js';
+import List from './../../components/List.js';
 
 // Import dados
 import { chaItens } from "./../../data/dadosItens.js"; 

@@ -9,7 +9,7 @@ import { FaBars } from 'react-icons/fa';
 import capuccino from './../../assets/mobile/cappuccino.jpg';
 import capuccinoBig from './../../assets/desktop/cappuccino.jpg';
 
-import List from './../../List.js';
+import List from './../../components/List.js';
 
 // Import dados
 import { capuccinoItens } from "./../../data/dadosItens.js"; 

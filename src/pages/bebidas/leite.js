@@ -9,7 +9,7 @@ import { FaBars } from 'react-icons/fa';
 import leite from './../../assets/mobile/leites.jpg';
 import leiteBig from './../../assets/desktop/leites.jpg';
 
-import List from './../../List.js';
+import List from './../../components/List.js';
 
 // Import dados
 import { leiteItens } from "./../../data/dadosItens.js"; 

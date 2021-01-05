@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // Import componente da barra lateral
-import SideBar from './SideBar.js';
+import SideBar from './components/SideBar.js';
 
 
 // Import de páginas

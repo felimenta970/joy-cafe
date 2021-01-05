@@ -2,9 +2,9 @@
 import { ProSidebar, Menu, MenuItem, SubMenu, SidebarHeader, SidebarContent, SidebarFooter } from 'react-pro-sidebar';
 
 // Styles
-import './styles/App.scss';
+import './../styles/App.scss';
 // import { } from 'react-icons';
- import joyLogo from './assets/logo_joy_long.png'
+ import joyLogo from './../assets/logo_joy_long.png'
 
 // React e rotas
 import React from 'react';

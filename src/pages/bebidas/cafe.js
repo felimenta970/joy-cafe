@@ -9,7 +9,7 @@ import { FaBars } from 'react-icons/fa';
 import cafe from './../../assets/mobile/cafe.jpg';
 import cafeBig from './../../assets/desktop/cafe.jpg';
 
-import List from './../../List.js';
+import List from './../../components/List.js';
 
 // Import dados
 import { cafeItens } from "./../../data/dadosItens.js"; 

@@ -9,7 +9,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import almoco from './../assets/mobile/almoco-alt.jpg';
 import almocoBig from './../assets/desktop/almoco.jpg';
 
-import List from './../List.js';
+import List from '../components/List.js';
 
 // Import dados
 import { almocoItens } from "../data/dadosItens.js"; 
