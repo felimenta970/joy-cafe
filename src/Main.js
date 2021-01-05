@@ -9,8 +9,8 @@ import Map from './Maps.js';
 
 const location = {
     address: 'R. Joaquim Antônio Nascimento, 156',
-    lat: -21.210999733825197,
-    lng: -47.81263235889447,
+    lat: -21.210775051346815,
+    lng: -47.81274930995369,
   }
 
 const Main = ({handleToggleSidebar}) => {
@@ -35,7 +35,7 @@ const Main = ({handleToggleSidebar}) => {
 
                 </div>
 
-                <Map location = {location} zoomLevel = {17} />
+                <Map location = {location} zoomLevel = {18} />
                 
             </div>
         </Router>
