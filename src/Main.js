@@ -25,7 +25,7 @@ const Main = ({handleToggleSidebar}) => {
                     
                 </div>
 
-                <h1 className="categoryName">ALMOÇO</h1> 
+                <h1 className="categoryName">HOME</h1> 
 
                 {/* Corpo da página, a ser construído */}
                 <div>

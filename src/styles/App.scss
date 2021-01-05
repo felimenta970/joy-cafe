@@ -142,20 +142,20 @@ body {
         height: 20vh;
       }
     
-      .map-h2 {
+    .map-h2 {
         font-size: 1.3rem;
         font-weight: 400;
-      }
+    }
     
-      .pin {
+    .pin {
         display: flex;
         align-items: center;
         width: 150px;
-      }
+    }
     
-      .pin-icon {
+    .pin-icon {
         font-size: 5vw;
-      }
+    }
   
 
     // .line {
@@ -199,12 +199,6 @@ body {
 
     @media (max-width: $breakpoint-lg) {
 
-        
-
-    }
-
-    @media (max-width: $breakpoint-xl) {
-
         .heroImgMobile {
             display: inline;
         }
@@ -212,6 +206,12 @@ body {
         .heroImg {
             display: none;
         }
+
+    }
+
+    @media (max-width: $breakpoint-xl) {
+
+        
     }
 
 }
