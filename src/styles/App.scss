@@ -93,7 +93,7 @@ body {
         font-weight: 400;
         color: #202020;
         //opacity: 95%;
-        font-size: 18px;
+        font-size: 20px;
         font-family: 'IBM Plex Sans', serif;
 
     }
@@ -112,6 +112,18 @@ body {
         color: $sidebar-color;
         color: #063133;
     }
+
+    .paragraph {
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    // .footerMain {
+    //     position: absolute;
+    //     bottom: 0;
+    //     left: 0;
+    //     right: 0;
+    // }
 
     // Grupo que contém o item
     .itemGroup {
