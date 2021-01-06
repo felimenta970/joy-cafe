@@ -1,17 +1,18 @@
 // Import estilos básicos da sidebar
 @import '~react-pro-sidebar/dist/scss/styles.scss';
+
+// Import bootstrap
 @import "~bootstrap/scss/bootstrap-grid";
 
-// Import font
+// Import fonts
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
-$sidebar-color: #9ce0d0;
 
-
+// Sidebar
 .pro-sidebar .pro-menu .pro-menu-item {
 
-    color: $sidebar-color;
+    color: #9ce0d0;
     opacity: 0.8;
     font-size: 20px;
     font-style: italic;   
@@ -20,26 +21,37 @@ $sidebar-color: #9ce0d0;
 
 .side-menu {
     font-family: 'Lora', sans-serif;
-}
-
-body {
-    height: 100vh;
-}
-
-.side-menu {
 
     // Esconde scrollbar 
     ::-webkit-scrollbar {
         display: none;
     }
 
+    // Definições para o logo na sidebar
     .logoSidebar {
         width: 80%;
-        color: $sidebar-color;
+        color: #9ce0d0;
         margin: 5px 10% 5px 10%;
     }
 }
 
+// Footer da sidebar
+.footerSection {
+    text-align: center;
+}
+
+// Raid da página
+#root {
+    height: 100%;
+}
+
+body {
+
+    // A página usa todo o espaço vertical
+    height: 100vh;
+}
+
+// Definições de estilo para o projeto como um todo
 .app {
     height: 100vh;
     display: flex;
@@ -51,15 +63,20 @@ body {
         cursor: pointer;
         width: 35px;
         height: 35px !important;
+
+        // Mesmo background do fundo
         background: #87BFB2;
         color: #101010;
         text-align: center;
         border-radius: 50%;
+
+        // Display:none para esconder na versão desktop
         display: none;
         align-items: center;
         justify-content: center;
         font-size: 15px;
     }
+
 
     // Conteúdo principal a ser exibido
     .main {
@@ -68,34 +85,46 @@ body {
         display: flex;
         flex-direction: column;
         overflow-y: auto; // Necessário para tornar a página scrollável
-        background-color:#87BFB2;
+        background-color: #87BFB2;
         
     }
 
-    .headerData {
-        flex-direction: row;
+    // Estilo para o nome da página
+    .categoryName {        
+        font-weight: bold;
+        color: #9ce0d0;
+        color: #063133;
     }
 
-    
+    // Parágrafo na página Sobre Nós
+    .paragraph {
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
 
-    // Estilo para itens
+    // Footer página principal
+    .footerMain {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    // Estilo para itens na lista
     // Nome
     .itemName {
         margin-bottom: 10px;
         font-size: 25px;
         font-weight: bold;
         color: #063133;
-        //text-transform: uppercase;
-        //opacity: 90%;
     }
 
-    // Desc
+    // Descrição
     .itemDesc {
         margin-bottom: 10px;
         font-style: italic;
         font-weight: 400;
         color: #202020;
-        //opacity: 95%;
+
         font-size: 20px;
         font-family: 'IBM Plex Sans', serif;
 
@@ -110,23 +139,6 @@ body {
         font-family: 'IBM Plex Sans', serif;
     }
 
-    .categoryName {        
-        font-weight: bold;
-        color: $sidebar-color;
-        color: #063133;
-    }
-
-    .paragraph {
-        margin-bottom: 20px;
-        font-size: 18px;
-    }
-
-    .footerMain {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-    }
-
     // Grupo que contém o item
     .itemGroup {
         margin-bottom: 15px;
@@ -134,6 +146,7 @@ body {
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     }
 
+    // Estilo para imagens no estilo mobile
     .heroImgMobile {
         width: 100%;
         height: auto;
@@ -144,6 +157,7 @@ body {
         filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
     }
 
+    // Estilo para imagens 
     .heroImg {
         width: 90%;
         height: auto;
@@ -153,52 +167,45 @@ body {
         filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
     }
 
+    // Estilo para o mapa
+    // Mapa em si
     .google-map {
         
         height: 300px;
         width: 100%;
 
-      }
-    
-    .map-h2 {
-        font-size: 1.3rem;
-        font-weight: 400;
     }
     
+    // Pin
     .pin {
         display: flex;
         align-items: center;
         width: 150px;
     }
     
+    // Ícone do pin
     .pin-icon {
         font-size: 5vw;
     }
-  
 
-    // .line {
-    //     width: 100px;
-    //     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    //     margin-bottom: 7px;
-    // }
-
+    // Estilo para telas muito pequenas
     @media (max-width: $breakpoint-sm) {
+
         .google-map {
             width: 100%;
         }
     }
 
-    // Mostrar botão apenas com telas menores que md
+    // Estilo para telas muito pequenas e pequenas
     @media (max-width: $breakpoint-md) {
 
+        // Mostrar botão
         .btn-toggle {
             display: flex;
             flex-direction: row;
         }
-
-    
-    
-          
+        
+        // Mudança no tamanho do pin do mapa
         .pin {
             display: flex;
             align-items: center;
@@ -206,23 +213,27 @@ body {
             color: var(--main-blue);
         }
           
+        // Tamanho do pin no mapa
         .pin-icon {
             font-size: 5vw;
         }
           
+        // Tamanho do texto do pin
         .pin-text {
             font-size: 1.3em;
         }
 
-
     }
 
+    // Estilos para telas medias e menores
     @media (max-width: $breakpoint-lg) {
 
+        // Mostra um estilo de imagem
         .heroImgMobile {
             display: inline;
         }
 
+        // Esconde outro estilo
         .heroImg {
             display: none;
         }
@@ -230,37 +241,8 @@ body {
     }
 
     @media (max-width: $breakpoint-xl) {
-
+        // Placeholder
         
     }
 
 }
-
-#root {
-    height: 100%;
-}
-
-.footerSection {
-    text-align: center;
-}
-
-.footer, .header {
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-
-.map-h2 {
-    text-transform: uppercase;
-    font-size: 1rem;
-    padding: 20px;
-    padding-left: 10px;
-    
-  }
-  
-  
-  
-  @media screen and (min-width: 799px) {
-    
-  }
