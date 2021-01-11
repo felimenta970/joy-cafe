@@ -40,6 +40,11 @@
     text-align: center;
 }
 
+.footerSidebar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 // Raid da página
 #root {
     height: 100%;
@@ -92,21 +97,53 @@ body {
     // Estilo para o nome da página
     .categoryName {        
         font-weight: bold;
-        color: #9ce0d0;
         color: #063133;
+
+        &.contact {
+            margin-bottom: 0px;
+        }
     }
 
     // Parágrafo na página Sobre Nós
     .paragraph {
         margin-bottom: 20px;
         font-size: 18px;
+
+        &.secondary {
+            font-style: italic;
+        }
+
+        &.contactText {
+            display: inline;
+            margin-top: 1px;
+            margin-left: 12px;
+            font-size: 20px;
+        }
     }
+
+    // .location {
+    //     text-align: center;
+    // }
 
     // Footer página principal
     .footerMain {
         display: flex;
         justify-content: center;
         align-content: center;
+    }
+
+    a {
+        font-style: italic;
+        color: #122B26;
+
+        .contactText {
+            font-weight: 500;
+        }
+
+        :visited {
+            color: #204e44;
+        }
+
     }
 
     // Estilo para itens na lista
@@ -165,6 +202,16 @@ body {
         opacity: 0.85;
         border-radius: 10px;
         filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
+    }
+
+    .contactIcon {
+        display: inline;
+        width: 25px;
+        height: 25px;
+    }
+
+    .contactGroup {
+        display: flex;
     }
 
     // Estilo para o mapa
