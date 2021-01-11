@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // Import componente da barra lateral
 import SideBar from './components/SideBar.js';
 
-
 // Import de páginas
 import Main from './Main.js';
 import Sobre from './pages/sobre/sobre.js';
