@@ -14,6 +14,7 @@ import almoco from './assets/mobile/almoco-alt.jpg';
 import fb_icon from './assets/facebook_icon.png';
 import wa_icon from './assets/whatsapp_icon.png';
 import ig_icon from './assets/instagram_icon.png';
+import email_icon from './assets/email_icon.png';
 
 const location = {
     address: 'R. Joaquim Antônio Nascimento, 156',
@@ -98,16 +99,6 @@ const Main = ({handleToggleSidebar}) => {
 
                             <a href="" target="_blank" className="contactGroup">
 
-                                <img src={fb_icon} className="contactIcon"/>
-                                
-                                <div className="paragraph contactText">
-                                    Facebook
-                                </div>
-
-                            </a>
-
-                            <a href="" target="_blank" className="contactGroup">
-
                                 <img src={wa_icon} className="contactIcon"/>
                                 
                                 <div className="paragraph contactText">
@@ -116,7 +107,10 @@ const Main = ({handleToggleSidebar}) => {
 
                             </a>
 
-                            <a href="" target="_blank" className="contactGroup">
+                            <br/>
+                            <br/>
+
+                            <a href="https://www.instagram.com/joycaferp/" target="_blank" className="contactGroup">
 
                                 <img src={ig_icon} className="contactIcon"/>
                                 
@@ -125,6 +119,34 @@ const Main = ({handleToggleSidebar}) => {
                                 </div>
 
                             </a>
+
+                            <br/>
+                            <br/>
+
+                            <a href="https://www.facebook.com/joycaferp" target="_blank" className="contactGroup">
+
+                                <img src={fb_icon} className="contactIcon"/>
+                                
+                                <div className="paragraph contactText">
+                                    Facebook
+                                </div>
+
+                            </a>
+
+                            <br/>
+                            <br/>
+
+                            <a href="mailto:joycaferp@gmail.com" target="_blank" className="contactGroup">
+
+                                <img src={email_icon} className="contactIcon"/>
+                                
+                                <div className="paragraph contactText">
+                                    Email
+                                </div>
+
+                            </a>
+
+                            
 
 
                         </Col>
