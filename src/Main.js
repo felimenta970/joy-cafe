@@ -165,7 +165,7 @@ const Main = ({handleToggleSidebar}) => {
                             <h1 className="categoryName">LOCALIZAÇÃO</h1>
 
                             <div className="paragraph">
-                                <a href="https://goo.gl/maps/JBM4bE61xPqTNfyt6" target="_blank">Rua Joaquim Antônio Nascimento, 156 - Jardim Califórnia, Ribeirão Preto - SP</a>
+                                <a href="https://goo.gl/maps/JBM4bE61xPqTNfyt6" target="_blank">Rua Joaquim Antônio Nascimento, 156 - Jardim Canadá, Ribeirão Preto - SP</a>
                             </div>
 
 
