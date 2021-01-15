@@ -23,11 +23,24 @@ const List = ({dataItem}) => {
                             <div className="itemDesc">
                                 {data.itemDesc}
                             </div>
+                            
+                            {data.itemPreco.map((data2) => {
+                                return (
 
-                
-                            <div className="itemPreco">
-                                {data.itemPreco}
-                            </div>
+                                    <div className="itemPrecoGroup">
+
+                                        <div className="itemType">
+                                            {data2.itemType}                           
+                                        </div>
+
+                                        <div className="itemPreco">
+                                            {data2.itemValue}
+                                        </div>
+
+
+                                    </div>
+                                );
+                            })}
 
                         </div>
                     );

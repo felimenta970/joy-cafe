@@ -15,7 +15,7 @@ const PageLayout = ({image, imageBig, dados, alt, title}) => {
                 <Row>
                     <Col xs lg="7">
                         {/* Chamamos a imagem para o caso mobile */}
-                        <img src={image} alt={dados.altImage} className="heroImgMobile" />
+                        <img src={image} alt={dados.alt} className="heroImgMobile" />
 
                         {/* Componente List gera os dados */}
                         <List dataItem={dados} />
