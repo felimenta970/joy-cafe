@@ -5,7 +5,6 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Container, Row, Col } from "react-bootstrap";
 
 import almoco from './../../assets/mobile/almoco-alt.jpg';
-import almocoBig from './../../assets/desktop/almoco.jpg';
 
 // Import icons
 import { FaBars } from 'react-icons/fa';

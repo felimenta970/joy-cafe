@@ -24,10 +24,10 @@ const List = ({dataItem}) => {
                                 {data.itemDesc}
                             </div>
                             
-                            {data.itemPreco.map((data2) => {
+                            {data.itemPreco.map((data2, key2) => {
                                 return (
 
-                                    <div className="itemPrecoGroup">
+                                    <div className="itemPrecoGroup" key={key2}>
 
                                         <div className="itemType">
                                             {data2.itemType}                           

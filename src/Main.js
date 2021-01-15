@@ -110,7 +110,7 @@ const Main = ({handleToggleSidebar}) => {
                             <br/>
                             <br/>
 
-                            <a href="https://www.instagram.com/joycaferp/" target="_blank" className="contactGroup">
+                            <a href="https://www.instagram.com/joycaferp/" target="_blank" rel="noreferrer" className="contactGroup">
 
                                 <img src={ig_icon} className="contactIcon"/>
                                 
@@ -123,7 +123,7 @@ const Main = ({handleToggleSidebar}) => {
                             <br/>
                             <br/>
 
-                            <a href="https://www.facebook.com/joycaferp" target="_blank" className="contactGroup">
+                            <a href="https://www.facebook.com/joycaferp" target="_blank" rel="noreferrer" className="contactGroup">
 
                                 <img src={fb_icon} className="contactIcon"/>
                                 
@@ -136,7 +136,7 @@ const Main = ({handleToggleSidebar}) => {
                             <br/>
                             <br/>
 
-                            <a href="mailto:joycaferp@gmail.com" target="_blank" className="contactGroup">
+                            <a href="mailto:joycaferp@gmail.com" target="_blank" rel="noreferrer" className="contactGroup">
 
                                 <img src={email_icon} className="contactIcon"/>
                                 
@@ -165,7 +165,7 @@ const Main = ({handleToggleSidebar}) => {
                             <h1 className="categoryName">LOCALIZAÇÃO</h1>
 
                             <div className="paragraph">
-                                <a href="https://goo.gl/maps/JBM4bE61xPqTNfyt6" target="_blank">Rua Joaquim Antônio Nascimento, 156 - Jardim Canadá, Ribeirão Preto - SP</a>
+                                <a href="https://goo.gl/maps/JBM4bE61xPqTNfyt6" target="_blank" rel="noreferrer">Rua Joaquim Antônio Nascimento, 156 - Jardim Canadá, Ribeirão Preto - SP</a>
                             </div>
 
 
