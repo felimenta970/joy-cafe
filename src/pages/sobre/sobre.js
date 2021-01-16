@@ -22,8 +22,10 @@ const Sobre = ({handleToggleSidebar}) => {
 
                 <h1 className="categoryName">SOBRE NÓS</h1>
 
+                {/* Container para o layout */}
                 <Container fluid="true">
 
+                    {/* Map de dados para os dados */}
                     {dadosSobreNos.map((data, key) => {
                         return(
 
@@ -35,6 +37,7 @@ const Sobre = ({handleToggleSidebar}) => {
                                     {/* Criamos um div para conter a lista de itens */}
                                         <img src={data.imgSrc} alt={data.imgAlt} className="heroImgMobile" />
 
+                                        {/* Outro map para os parágrafos */}
                                         {data.text.map((data2, key2) => {
 
                                             return (
@@ -69,7 +72,7 @@ const Sobre = ({handleToggleSidebar}) => {
                 </Container>
 
             </div>
-            
+
         </Router>
     );
 }

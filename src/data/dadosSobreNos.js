@@ -1,5 +1,7 @@
+// Imports de imagens
 import almoco from './../assets/mobile/almoco-alt.jpg';
 
+// Sobre nós
 export const dadosSobreNos = [
     {
         title: '',
@@ -42,6 +44,7 @@ export const dadosSobreNos = [
     }
 ];
 
+// Serviços
 export const dadosServicos = [
     {
         title: '',

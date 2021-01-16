@@ -2,10 +2,10 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 
+// Import Bootstrap components
 import { Container, Row, Col } from "react-bootstrap";
 
-import almoco from './../../assets/mobile/almoco-alt.jpg';
-
+// Import dados
 import { dadosServicos } from "../../data/dadosSobreNos.js";
 
 // Import icons
@@ -27,8 +27,10 @@ const Servicos = ({handleToggleSidebar}) => {
 
                 <h1 className="categoryName">SERVIÇOS</h1>
 
+                {/* Container para o layout */}
                 <Container fluid="true">
 
+                    {/* Map de dados para os dados */}
                     {dadosServicos.map((data, key) => {
                         return(
 
@@ -40,6 +42,7 @@ const Servicos = ({handleToggleSidebar}) => {
                                     {/* Criamos um div para conter a lista de itens */}
                                         <img src={data.imgSrc} alt={data.imgAlt} className="heroImgMobile" />
 
+                                        {/* Outro map para os parágrafos */}
                                         {data.text.map((data2, key2) => {
 
                                             return (

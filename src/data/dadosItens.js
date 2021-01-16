@@ -94,6 +94,7 @@ export const almocoItens = [
     },
 ];
 
+// Refrigerantes e água
 export const refriItens = [
     {
         itemName: "Água",
@@ -171,6 +172,7 @@ export const refriItens = [
     },
 ];
 
+// Cafés
 export const cafeItens = [
     {
         itemName: "Café expresso",
@@ -218,6 +220,7 @@ export const cafeItens = [
     },
 ];
 
+// Capuccinos
 export const capuccinoItens = [
     {
         itemName: "Capuccino",
@@ -259,6 +262,7 @@ export const capuccinoItens = [
     },
 ];
 
+// Chás
 export const chaItens = [
     {
         itemName: "Chá",
@@ -292,6 +296,7 @@ export const chaItens = [
     },
 ];
 
+// Leites
 export const leiteItens = [
     {
         itemName: "Chocolate Quente",
@@ -361,6 +366,7 @@ export const leiteItens = [
     },
 ];
 
+// Sucos
 export const sucoItens = [
     {
         itemName: "Laranja",
@@ -494,6 +500,7 @@ export const sucoItens = [
     },
 ];
 
+// Lanches Quentes
 export const lancheQuenteItens = [
     {
         itemName: "Misto Quente",
@@ -547,6 +554,7 @@ export const lancheQuenteItens = [
     },
 ];
 
+// Lanches naturais
 export const lancheNaturalItens = [
     {
         itemName: "Presunto e queijo",
@@ -590,6 +598,7 @@ export const lancheNaturalItens = [
     },
 ];
 
+// Salgados
 export const salgadosItens = [
     {
         itemName: "Croissant",
@@ -673,6 +682,7 @@ export const salgadosItens = [
     },
 ];
 
+// Pães de queijo
 export const paoQueijoItens = [
     {
         itemName: "Pão de queijo tradicional",
@@ -760,6 +770,7 @@ export const paoQueijoItens = [
     },
 ];
 
+// Doces
 export const docesItens = [
     {
         itemName: "Bolo caseiro (pedaço)",
@@ -813,6 +824,7 @@ export const docesItens = [
     },
 ];
 
+// Panquecas e Omeletes
 export const panquecaOmeleteItens = [
     {
         itemName: "3 Queijos",
@@ -876,6 +888,7 @@ export const panquecaOmeleteItens = [
     },
 ];
 
+// Saladas
 export const saladaItens = [
     {
         itemName: "Salada de manga",
