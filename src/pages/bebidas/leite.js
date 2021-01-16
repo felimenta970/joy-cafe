@@ -32,6 +32,14 @@ const Leite = ({handleToggleSidebar}) => {
                 title="LEITES"
             />
 
+            <div className="itemType">
+                Adicional de Chantily ou Marshmallow                           
+            </div>
+
+            <div className="itemPreco">
+                R$ 2,50
+            </div>
+
         </div>
     );
 }

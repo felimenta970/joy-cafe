@@ -122,7 +122,7 @@ export const refriItens = [
     },
     {
         itemName: "Refrigerante lata (330ml)",
-        itemDesc: "Coca-Cola, Coca-Cola Zero, Fanta (Laranja, Uva e Guaraná), Sprite, Shweeps (Citrus e Tônica)",
+        itemDesc: "Coca-Cola, Coca-Cola Zero, Fanta (Laranja, Uva e Guaraná), Sprite, Schweppes (Citrus e Tônica)",
         itemPreco: [
             {
                 itemType: "",
@@ -379,6 +379,16 @@ export const sucoItens = [
         ]
     },
     {
+        itemName: "Laranja com Cenoura e Acerola",
+        itemDesc: "",
+        itemPreco: [
+            {
+                itemType: "",
+                itemValue: "R$ 8,00"
+            },
+        ]
+    },
+    {
         itemName: "Abacaxi",
         itemDesc: "",
         itemPreco: [
@@ -395,16 +405,6 @@ export const sucoItens = [
             {
                 itemType: "",
                 itemValue: "R$ 7,00"
-            },
-        ]
-    },
-    {
-        itemName: "Laranja com Cenoura e Acerola",
-        itemDesc: "",
-        itemPreco: [
-            {
-                itemType: "",
-                itemValue: "R$ 8,00"
             },
         ]
     },
@@ -602,7 +602,7 @@ export const lancheNaturalItens = [
 export const salgadosItens = [
     {
         itemName: "Croissant",
-        itemDesc: "Presunto e queijo, queijo ou frango",
+        itemDesc: "Presunto e queijo; queijo; frango",
         itemPreco: [
             {
                 itemType: "",
@@ -713,6 +713,20 @@ export const paoQueijoItens = [
         ]
     },
     {
+        itemName: "Catupiry",
+        itemDesc: "",
+        itemPreco: [
+            {
+                itemType: "80g",
+                itemValue: "R$ 7,00"
+            },
+            {
+                itemType: "120g",
+                itemValue: "R$ 7,50",
+            },
+        ]
+    },
+    {
         itemName: "Catupiry com bacon",
         itemDesc: "",
         itemPreco: [
@@ -740,20 +754,7 @@ export const paoQueijoItens = [
             },
         ]
     },
-    {
-        itemName: "Catupiry",
-        itemDesc: "",
-        itemPreco: [
-            {
-                itemType: "80g",
-                itemValue: "R$ 7,00"
-            },
-            {
-                itemType: "120g",
-                itemValue: "R$ 7,50",
-            },
-        ]
-    },
+    
     {
         itemName: "Nutella",
         itemDesc: "",
@@ -919,7 +920,7 @@ export const saladaItens = [
         ]
     },
     {
-        itemName: "Salada de frango",
+        itemName: "Salada com frango",
         itemDesc: "Alface, parmesão, crotons e frango desfiado",
         itemPreco: [
             {
