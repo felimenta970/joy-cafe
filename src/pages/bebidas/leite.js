@@ -12,7 +12,16 @@ import leiteBig from './../../assets/desktop/leites.jpg';
 import PageLayout from '../../components/pageLayout.js';
 
 // Import dados
-import { leiteItens } from "./../../data/dadosItens.js"; 
+import { leiteItens, extraLeite } from "./../../data/dadosItens.js"; 
+
+
+export const extraInfo = [
+    {
+    mainText: "",
+    subText: "Adicional de Chantily ou Marshmallow",
+    priceText: "R$ 2,50",
+    }
+]
 
 const Leite = ({handleToggleSidebar}) => {
     return (
@@ -30,14 +39,15 @@ const Leite = ({handleToggleSidebar}) => {
                 dados={leiteItens}
                 alt="Chocolate quente em uma xícara"
                 title="LEITES"
+                extraInfo={extraLeite}
             />
 
             <div className="itemType">
-                Adicional de Chantily ou Marshmallow                           
+
             </div>
 
             <div className="itemPreco">
-                R$ 2,50
+                
             </div>
 
         </div>

@@ -12,7 +12,7 @@ import omeleteBig from './../assets/desktop/omelete.jpg';
 import PageLayout from '../components/pageLayout.js';
 
 // Import dados
-import { panquecaOmeleteItens } from "../data/dadosItens.js"; 
+import { panquecaOmeleteItens, extraPanquecaOmelete } from "../data/dadosItens.js"; 
 
 const Omelete = ({handleToggleSidebar}) => {
     return (
@@ -30,6 +30,7 @@ const Omelete = ({handleToggleSidebar}) => {
                 dados={panquecaOmeleteItens}
                 alt="Omelete no prato"
                 title="PANQUECAS E OMELETES"
+                extraInfo={extraPanquecaOmelete}
             />
 
         </div>

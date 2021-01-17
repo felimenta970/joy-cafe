@@ -169,6 +169,29 @@ body {
         
         font-size: 18px;
         font-family: 'IBM Plex Sans', serif;
+
+        
+    }
+
+    .extraItem {
+        font-size: 22px;
+        font-weight: bold;
+
+        text-transform: uppercase;
+        font-style: italic;
+
+        color: #063133;
+
+        margin-top: 25px;
+        margin-bottom: 5px;
+    }
+
+    .extraItemDesc {
+        font-style: italic;
+        color: #202020;
+    
+        font-size: 18px;
+        font-family: 'IBM Plex Sans', serif;
     }
 
     // Preço

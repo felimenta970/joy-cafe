@@ -1,10 +1,13 @@
 import React from 'react';
 
+// Import de componentes Bootstrap
 import { Container, Row, Col } from "react-bootstrap";
 
-import List from '../components/List.js';
+// Import de componentes de lista e infos adicionais
+import List from './List.js';
+import ExtraInfoMenu from './extraInfoMenu.js';
 
-const PageLayout = ({image, imageBig, dados, alt, title}) => {
+const PageLayout = ({image, imageBig, dados, alt, title, extraInfo}) => {
     return (
         <div>
         <h1 className="categoryName">{title}</h1>
@@ -20,8 +23,13 @@ const PageLayout = ({image, imageBig, dados, alt, title}) => {
                         {/* Componente List gera os dados */}
                         <List dataItem={dados} />
 
+                        {/* Componente de infos adicionais do meny */}
+                        <ExtraInfoMenu extraInfo={extraInfo}
+                        />
+
                     </Col>
 
+                    {/* Imagem para segunda coluna */}
                     <Col lg="5">
                         <img src={imageBig} alt={alt} className="heroImg" />
                         

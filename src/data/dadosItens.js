@@ -220,6 +220,32 @@ export const cafeItens = [
     },
 ];
 
+export const extraCafe = [
+    {
+    extraMainText: "Escolha um sabor adicional",
+    extraSubText: [
+        {
+            item: "Maçã verde",
+            price: "",
+        },
+        {
+            item: "Amorena",
+            price: "",
+        },
+        {
+            item: "Morango",
+            price: "",
+        },
+        {
+            item: "Limão Siciliano",
+            price: "",
+        },
+    ],
+
+    extraPriceText: "",   
+    }
+];
+
 // Capuccinos
 export const capuccinoItens = [
     {
@@ -364,6 +390,20 @@ export const leiteItens = [
             },
         ]
     },
+];
+
+export const extraLeite = [
+    {
+    extraMainText: "",
+    extraSubText: [
+        {
+            item: "Adicional de Chantily",
+            price: "",
+        },
+    ],
+    
+    extraPriceText: "R$ 2,50",   
+    }
 ];
 
 // Sucos
@@ -596,6 +636,28 @@ export const lancheNaturalItens = [
             },
         ]
     },
+];
+
+export const extraLancheNatural = [
+    {
+    extraMainText: "Molhos",
+    extraSubText: [
+        {
+            item: "Pesto",
+            price: ""
+        },
+        {
+            item: "Mostarda e mel",
+            price: ""
+        },
+        {
+            item: "Maionese",
+            price: ""
+        },
+    ],
+    
+    extraPriceText: "",   
+    }
 ];
 
 // Salgados
@@ -887,6 +949,24 @@ export const panquecaOmeleteItens = [
             },
         ]
     },
+];
+
+export const extraPanquecaOmelete = [
+    {
+    extraMainText: "Adicionais",
+    extraSubText: [
+        {
+            item: "Alho poró, frango, palmito ou bacon",
+            price: "R$2,00"
+        },
+        {
+            item: "Tomate ou azeitona",
+            price: "R$ 1,00"
+        },
+    ],
+
+    extraPriceText: "",  
+    } 
 ];
 
 // Saladas

@@ -12,7 +12,7 @@ import sand_naturalBig from './../../assets/desktop/sand_natural.jpg';
 import PageLayout from '../../components/pageLayout.js';
 
 // Import dados
-import { lancheNaturalItens } from "./../../data/dadosItens.js"; 
+import { lancheNaturalItens, extraLancheNatural } from "./../../data/dadosItens.js"; 
 
 const Natural = ({handleToggleSidebar}) => {
     return (
@@ -30,6 +30,7 @@ const Natural = ({handleToggleSidebar}) => {
                 dados={lancheNaturalItens}
                 alt="Dois lanches naturais com tomate, cebola e queijo"
                 title="LANCHES NATURAIS"
+                extraInfo={extraLancheNatural}
             />
 
         </div>

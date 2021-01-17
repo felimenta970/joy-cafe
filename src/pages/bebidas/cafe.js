@@ -12,7 +12,7 @@ import cafeBig from './../../assets/desktop/cafe.jpg';
 import PageLayout from '../../components/pageLayout.js';
 
 // Import dados
-import { cafeItens } from "./../../data/dadosItens.js"; 
+import { cafeItens, extraCafe } from "./../../data/dadosItens.js"; 
 
 const Cafe = ({handleToggleSidebar}) => {
     return (
@@ -30,6 +30,7 @@ const Cafe = ({handleToggleSidebar}) => {
                 dados={cafeItens}
                 alt="Xícara de café"
                 title="CAFÉS"
+                extraInfo={extraCafe}
             />
 
         </div>
