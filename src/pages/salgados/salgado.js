@@ -12,7 +12,7 @@ import salgadoBig from './../../assets/desktop/salgado.jpg';
 import PageLayout from '../../components/pageLayout.js';
 
 // Import dados
-import { salgadosItens } from "./../../data/dadosItens.js"; 
+import { salgadosItens, extraInfoEmpty } from "./../../data/dadosItens.js"; 
 
 const Salgado = ({handleToggleSidebar}) => {
     return (
@@ -30,6 +30,7 @@ const Salgado = ({handleToggleSidebar}) => {
                 dados={salgadosItens}
                 alt="Croassaint sendo polvilhado"
                 title="SALGADOS"
+                extraInfo={extraInfoEmpty}
             />
 
         </div>

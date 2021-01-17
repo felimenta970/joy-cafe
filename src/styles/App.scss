@@ -103,7 +103,7 @@ body {
     // Parágrafo na página Sobre Nós
     .paragraph {
         margin-bottom: 20px;
-        font-size: 18px;
+        font-size: 19px;
 
         &.secondary {
             font-style: italic;
@@ -115,6 +115,11 @@ body {
             margin-left: 12px;
             font-size: 20px;
         }
+
+    }
+
+    .horarioTitle {
+        color: #063133;
     }
 
     // .location {

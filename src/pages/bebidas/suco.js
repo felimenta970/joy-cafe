@@ -12,7 +12,7 @@ import sucoBig from './../../assets/desktop/suco.jpg';
 import PageLayout from '../../components/pageLayout.js';
 
 // Import dados
-import { sucoItens } from "./../../data/dadosItens.js"; 
+import { sucoItens, extraInfoEmpty } from "./../../data/dadosItens.js"; 
 
 const Suco = ({handleToggleSidebar}) => {
     return (
@@ -30,6 +30,7 @@ const Suco = ({handleToggleSidebar}) => {
                 dados={sucoItens}
                 alt="Suco de laranja no copo e laranjas ao fundo"
                 title="SUCOS"
+                extraInfo={extraInfoEmpty}
             />
 
         </div>

@@ -12,7 +12,7 @@ import almocoBig from './../assets/desktop/almoco.jpg';
 import PageLayout from '../components/pageLayout.js';
 
 // Import dados
-import { almocoItens } from "../data/dadosItens.js"; 
+import { almocoItens, extraInfoEmpty } from "../data/dadosItens.js"; 
 
 const Almoco = ({handleToggleSidebar}) => {
     return (
@@ -30,6 +30,7 @@ const Almoco = ({handleToggleSidebar}) => {
                 dados={almocoItens}
                 alt="Foto de prato de comida"
                 title="ALMOÇO"
+                extraInfo={extraInfoEmpty}
             />
 
         </div>

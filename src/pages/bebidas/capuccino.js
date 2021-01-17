@@ -12,7 +12,7 @@ import capuccinoBig from './../../assets/desktop/cappuccino.jpg';
 import PageLayout from '../../components/pageLayout.js';
 
 // Import dados
-import { capuccinoItens } from "./../../data/dadosItens.js"; 
+import { capuccinoItens, extraInfoEmpty } from "./../../data/dadosItens.js"; 
 
 const Capuccino = ({handleToggleSidebar}) => {
     return (
@@ -30,6 +30,7 @@ const Capuccino = ({handleToggleSidebar}) => {
                 dados={capuccinoItens}
                 alt="Copo de capuccino"
                 title="CAPUCCINOS"
+                extraInfo={extraInfoEmpty}
             />
 
         </div>

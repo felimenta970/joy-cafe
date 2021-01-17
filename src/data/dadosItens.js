@@ -1014,3 +1014,14 @@ export const saladaItens = [
         ]
     },
 ];
+
+export const extraInfoEmpty = [
+    {
+    extraMainText: "",
+    extraSubText: [
+    
+    ],
+
+    extraPriceText: "",  
+    } 
+];

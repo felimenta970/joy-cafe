@@ -1,6 +1,11 @@
 // Imports de imagens
 import almoco from './../assets/mobile/almoco-alt.jpg';
 
+import main from './../assets/joy/main.jpg';
+import missao from './../assets/joy/missao.jpg';
+
+
+
 // Sobre nós
 export const dadosSobreNos = [
     {
@@ -12,7 +17,7 @@ export const dadosSobreNos = [
                 paragraph2: 'Pellentesque aliquet, nulla rhoncus bibendum lacinia, orci urna pretium enim, id convallis eros elit at nibh. Nulla feugiat nibh in egestas sodales. Curabitur consectetur, turpis vitae congue dictum, sapien quam pellentesque orci, non sagittis ex massa quis nisl. In blandit justo eget lorem maximus auctor. Maecenas semper interdum dolor. Mauris congue, mauris eget aliquam consectetur, arcu felis consequat ipsum, id tincidunt diam risus eget metus. Praesent tristique blandit elit in volutpat.',
             },
         ],
-        imgSrc: almoco,
+        imgSrc: main,
         imgAlt: 'Foto de prato de comida',
 
     },
@@ -38,7 +43,7 @@ export const dadosSobreNos = [
                 paragraph2: 'Pellentesque aliquet, nulla rhoncus bibendum lacinia, orci urna pretium enim, id convallis eros elit at nibh. Nulla feugiat nibh in egestas sodales. Curabitur consectetur, turpis vitae congue dictum, sapien quam pellentesque orci, non sagittis ex massa quis nisl. In blandit justo eget lorem maximus auctor. Maecenas semper interdum dolor. Mauris congue, mauris eget aliquam consectetur, arcu felis consequat ipsum, id tincidunt diam risus eget metus. Praesent tristique blandit elit in volutpat.',
             },
         ],
-        imgSrc: almoco,
+        imgSrc: missao,
         imgAlt: 'Foto de prato de comida',
 
     }

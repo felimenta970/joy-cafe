@@ -12,7 +12,7 @@ import chaBig from './../../assets/desktop/cha.jpg';
 import PageLayout from '../../components/pageLayout.js';
 
 // Import dados
-import { chaItens } from "./../../data/dadosItens.js"; 
+import { chaItens, extraInfoEmpty } from "./../../data/dadosItens.js"; 
 
 const Cha = ({handleToggleSidebar}) => {
     return (
@@ -30,6 +30,7 @@ const Cha = ({handleToggleSidebar}) => {
                 dados={chaItens}
                 alt="Xícara de chá em mesa de madeira"
                 title="CHÁS"
+                extraInfo={extraInfoEmpty}
             />
 
         </div>

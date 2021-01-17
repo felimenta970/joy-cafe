@@ -12,7 +12,7 @@ import refriBig from './../../assets/desktop/refri.jpg';
 import PageLayout from '../../components/pageLayout.js';
 
 // Import dados
-import { refriItens } from "./../../data/dadosItens.js"; 
+import { refriItens, extraInfoEmpty } from "./../../data/dadosItens.js"; 
 
 const Refri = ({handleToggleSidebar}) => {
     return (
@@ -29,6 +29,7 @@ const Refri = ({handleToggleSidebar}) => {
                 dados={refriItens}
                 alt="Lata de coca cola no fundo preto"
                 title="REFRIGERANTES E ÁGUA"
+                extraInfo={extraInfoEmpty}
             />
 
         </div>

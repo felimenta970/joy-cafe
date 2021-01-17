@@ -12,7 +12,7 @@ import saladaBig from './../assets/desktop/salada.jpg';
 import PageLayout from '../components/pageLayout.js';
 
 // Import dados
-import { saladaItens } from "../data/dadosItens.js"; 
+import { saladaItens, extraInfoEmpty } from "../data/dadosItens.js"; 
 
 const Salada = ({handleToggleSidebar}) => {
     return (
@@ -30,6 +30,7 @@ const Salada = ({handleToggleSidebar}) => {
                 dados={saladaItens}
                 alt="Salada no prato"
                 title="SALADAS"
+                extraInfo={extraInfoEmpty}
             />
 
         </div>

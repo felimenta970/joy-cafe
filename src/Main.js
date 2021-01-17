@@ -8,19 +8,19 @@ import { FaBars } from 'react-icons/fa';
 import { Container, Row, Col } from "react-bootstrap";
 
 import Map from './components/Maps.js';
+import ContactInfo from './components/contactInfo.js';
 
 import almoco from './assets/mobile/almoco-alt.jpg';
-
-import fb_icon from './assets/facebook_icon.png';
-import wa_icon from './assets/whatsapp_icon.png';
-import ig_icon from './assets/instagram_icon.png';
-import email_icon from './assets/email_icon.png';
+import clock from './assets/joy/clock.jpg';
 
 const location = {
     address: 'R. Joaquim Antônio Nascimento, 156',
     lat: -21.210775051346815,
     lng: -47.81274930995369,
 }
+
+const mainText1 = "Sejam bem vindos ao Joy Café & Bistrot! Conheçam nosso cardápio cheio de opções deliciosas para o seu café da manhã, um almoço rápido, caseiro e saudável, e o lanche leve da tarde!";
+const mainText2 = "Ah, e caso esteja em busca de alguém para preparar a comida do seu evento, entre em contato conosco para realizar um orçamento! Você pode conhecer um pouco dos serviços que realizamos em Sobre Nós -> Serviços, no menu do site.";
 
 
 const Main = ({handleToggleSidebar}) => {
@@ -45,7 +45,10 @@ const Main = ({handleToggleSidebar}) => {
                         {/* Criamos um div para conter a lista de itens */}
                             <img src={almoco} alt="Foto de prato de comida" className="heroImgMobile" />
                             <div className="paragraph">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec turpis in sapien fermentum pharetra ut faucibus nibh. Integer tempus pretium tincidunt. Nullam ante dui, pulvinar non tortor quis, imperdiet pulvinar ligula. Integer gravida interdum cursus. Suspendisse sollicitudin facilisis sodales. Aenean egestas eros sed dolor gravida consectetur. Sed blandit massa commodo pulvinar molestie. Phasellus id sem nibh. Vestibulum aliquet vitae urna at rhoncus. Nunc non euismod dolor, eu efficitur risus. Curabitur aliquet velit ac dui placerat, ac ultrices lectus malesuada. Vivamus vitae sagittis metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                {mainText1}
+                            </div>
+                            <div className="paragraph">
+                                {mainText2}
                             </div>
 
                         </Col>
@@ -63,12 +66,12 @@ const Main = ({handleToggleSidebar}) => {
                         <Col xs lg="7">
                         {/* Criamos um div para conter a lista de itens */}
                             <h1 className="categoryName">HORÁRIOS DE FUNCIONAMENTO</h1>
-                            <img src={almoco} alt="Foto de prato de comida" className="heroImgMobile" />
+                            <img src={clock} alt="Foto de prato de comida" className="heroImgMobile" />
 
                             <h2 className="horarioTitle">Estabelecimento</h2>
 
-                            <div className="paragraph">
-                                SEGUNDA À SEXTA: 8:00 às 18:00
+                            <div className="paragraph hours">
+                                SEGUNDA À SEXTA: 8:00 às 17:00
                             </div>
 
                             <h2 className="horarioTitle">Refeições</h2>
@@ -80,7 +83,7 @@ const Main = ({handleToggleSidebar}) => {
                         </Col>
 
                         <Col lg="5">
-                            <img src={almoco} alt="Foto de prato de comida" className="heroImg" />
+                            <img src={clock} alt="Foto de prato de comida" className="heroImg" />
                             
                         </Col>
                     </Row>
@@ -97,57 +100,7 @@ const Main = ({handleToggleSidebar}) => {
 
                             <br/>
 
-                            <a href="" target="_blank" className="contactGroup">
-
-                                <img src={wa_icon} className="contactIcon"/>
-                                
-                                <div className="paragraph contactText">
-                                    WhatsApp
-                                </div>
-
-                            </a>
-
-                            <br/>
-                            <br/>
-
-                            <a href="https://www.instagram.com/joycaferp/" target="_blank" rel="noreferrer" className="contactGroup">
-
-                                <img src={ig_icon} className="contactIcon"/>
-                                
-                                <div className="paragraph contactText">
-                                    Instagram
-                                </div>
-
-                            </a>
-
-                            <br/>
-                            <br/>
-
-                            <a href="https://www.facebook.com/joycaferp" target="_blank" rel="noreferrer" className="contactGroup">
-
-                                <img src={fb_icon} className="contactIcon"/>
-                                
-                                <div className="paragraph contactText">
-                                    Facebook
-                                </div>
-
-                            </a>
-
-                            <br/>
-                            <br/>
-
-                            <a href="mailto:joycaferp@gmail.com" target="_blank" rel="noreferrer" className="contactGroup">
-
-                                <img src={email_icon} className="contactIcon"/>
-                                
-                                <div className="paragraph contactText">
-                                    Email
-                                </div>
-
-                            </a>
-
-                            
-
+                            <ContactInfo />
 
                         </Col>
 
@@ -188,10 +141,6 @@ const Main = ({handleToggleSidebar}) => {
                     </Row>
 
                 </Container>
-
-
-
-                {/* Footer da página principal */}
 
                 
             </div>

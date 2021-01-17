@@ -12,7 +12,7 @@ import doceBig from './../assets/desktop/bolo_cenoura.jpg';
 import PageLayout from '../components/pageLayout.js';
 
 // Import dados
-import { docesItens } from "../data/dadosItens.js"; 
+import { docesItens, extraInfoEmpty } from "../data/dadosItens.js"; 
 
 const Doces = ({handleToggleSidebar}) => {
     return (
@@ -30,6 +30,7 @@ const Doces = ({handleToggleSidebar}) => {
                 dados={docesItens}
                 alt="Bolo de laranja"
                 title="DOCES"
+                extraInfo={extraInfoEmpty}
             />
 
         </div>

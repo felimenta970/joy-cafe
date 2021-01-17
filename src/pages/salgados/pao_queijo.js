@@ -12,7 +12,7 @@ import pao_queijoBig from './../../assets/desktop/pao_queijo.jpg';
 import PageLayout from '../../components/pageLayout.js';
 
 // Import dados
-import { paoQueijoItens } from "./../../data/dadosItens.js"; 
+import { paoQueijoItens, extraInfoEmpty } from "./../../data/dadosItens.js"; 
 
 const PaoQueijo = ({handleToggleSidebar}) => {
     return (
@@ -30,6 +30,7 @@ const PaoQueijo = ({handleToggleSidebar}) => {
                 dados={paoQueijoItens}
                 alt="Pães de queijo em travessa"
                 title="PÃES DE QUEIJO"
+                extraInfo={extraInfoEmpty}
             />
 
         </div>

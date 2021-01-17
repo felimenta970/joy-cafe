@@ -12,7 +12,7 @@ import lancheQuenteBig from './../../assets/desktop/grilled_cheese.jpg';
 import PageLayout from '../../components/pageLayout.js';
 
 // Import dados
-import { lancheQuenteItens } from "./../../data/dadosItens.js"; 
+import { lancheQuenteItens, extraInfoEmpty } from "./../../data/dadosItens.js"; 
 
 const Quente = ({handleToggleSidebar}) => {
     return (
@@ -30,6 +30,7 @@ const Quente = ({handleToggleSidebar}) => {
                 dados={lancheQuenteItens}
                 alt="Queijo quente com manjericão"
                 title="LANCHES QUENTES"
+                extraInfo={extraInfoEmpty}
             />
 
         </div>
