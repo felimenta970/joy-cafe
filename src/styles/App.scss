@@ -46,6 +46,22 @@
     height: 100%;
 }
 
+*::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #87BFB2;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #063133;
+    border-radius: 20px;
+    border: 3px solid  #87BFB2;
+  }
+
+
+
 body {
 
     // A página usa todo o espaço vertical
@@ -87,8 +103,11 @@ body {
         flex-direction: column;
         overflow-y: auto; // Necessário para tornar a página scrollável
         background-color: #87BFB2;
+
+        
         
     }
+
 
     // Estilo para o nome da página
     .categoryName {        
@@ -104,6 +123,8 @@ body {
     .paragraph {
         margin-bottom: 20px;
         font-size: 19px;
+        text-align: justify;
+        text-indent: 50px;
 
         &.secondary {
             font-style: italic;

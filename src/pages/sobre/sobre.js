@@ -33,7 +33,7 @@ const Sobre = ({handleToggleSidebar}) => {
                                 <h1 className="categoryName">{data.title}</h1>
 
                                 <Row>
-                                    <Col xs lg="7">
+                                    <Col xs lg="6">
                                     {/* Criamos um div para conter a lista de itens */}
                                         <img src={data.imgSrc} alt={data.imgAlt} className="heroImgMobile" />
 
@@ -56,7 +56,7 @@ const Sobre = ({handleToggleSidebar}) => {
                                         
                                     </Col>
 
-                                    <Col lg="5">
+                                    <Col lg="6">
 
                                         <img src={data.imgSrc} alt={data.imgAlt} className="heroImg" />
                                         
