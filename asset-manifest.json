@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/joy-cafe/static/css/main.6c26b374.chunk.css",
-    "main.js": "/joy-cafe/static/js/main.9a3f5857.chunk.js",
-    "main.js.map": "/joy-cafe/static/js/main.9a3f5857.chunk.js.map",
+    "main.css": "/joy-cafe/static/css/main.e425f7f3.chunk.css",
+    "main.js": "/joy-cafe/static/js/main.4a5104f9.chunk.js",
+    "main.js.map": "/joy-cafe/static/js/main.4a5104f9.chunk.js.map",
     "runtime-main.js": "/joy-cafe/static/js/runtime-main.630eb7f5.js",
     "runtime-main.js.map": "/joy-cafe/static/js/runtime-main.630eb7f5.js.map",
-    "static/js/2.c7caae91.chunk.js": "/joy-cafe/static/js/2.c7caae91.chunk.js",
-    "static/js/2.c7caae91.chunk.js.map": "/joy-cafe/static/js/2.c7caae91.chunk.js.map",
+    "static/js/2.cafe41f2.chunk.js": "/joy-cafe/static/js/2.cafe41f2.chunk.js",
+    "static/js/2.cafe41f2.chunk.js.map": "/joy-cafe/static/js/2.cafe41f2.chunk.js.map",
     "index.html": "/joy-cafe/index.html",
-    "static/css/main.6c26b374.chunk.css.map": "/joy-cafe/static/css/main.6c26b374.chunk.css.map",
-    "static/js/2.c7caae91.chunk.js.LICENSE.txt": "/joy-cafe/static/js/2.c7caae91.chunk.js.LICENSE.txt",
+    "static/css/main.e425f7f3.chunk.css.map": "/joy-cafe/static/css/main.e425f7f3.chunk.css.map",
+    "static/js/2.cafe41f2.chunk.js.LICENSE.txt": "/joy-cafe/static/js/2.cafe41f2.chunk.js.LICENSE.txt",
     "static/media/almoco-alt.7b6a1408.jpg": "/joy-cafe/static/media/almoco-alt.7b6a1408.jpg",
     "static/media/almoco.f02a9f15.jpg": "/joy-cafe/static/media/almoco.f02a9f15.jpg",
     "static/media/bolo_cenoura.13de8a84.jpg": "/joy-cafe/static/media/bolo_cenoura.13de8a84.jpg",
@@ -20,11 +20,14 @@
     "static/media/cappuccino.a2e8a8f4.jpg": "/joy-cafe/static/media/cappuccino.a2e8a8f4.jpg",
     "static/media/cha.346f452e.jpg": "/joy-cafe/static/media/cha.346f452e.jpg",
     "static/media/cha.d3fbe8ed.jpg": "/joy-cafe/static/media/cha.d3fbe8ed.jpg",
+    "static/media/clock.c5b62631.jpg": "/joy-cafe/static/media/clock.c5b62631.jpg",
     "static/media/grilled_cheese.7247ab51.jpg": "/joy-cafe/static/media/grilled_cheese.7247ab51.jpg",
     "static/media/grilled_cheese.9ab89c2d.jpg": "/joy-cafe/static/media/grilled_cheese.9ab89c2d.jpg",
     "static/media/leites.524181ab.jpg": "/joy-cafe/static/media/leites.524181ab.jpg",
     "static/media/leites.dd6bd3fc.jpg": "/joy-cafe/static/media/leites.dd6bd3fc.jpg",
     "static/media/logo_joy_long.3d99baef.png": "/joy-cafe/static/media/logo_joy_long.3d99baef.png",
+    "static/media/main.adbf98d3.jpg": "/joy-cafe/static/media/main.adbf98d3.jpg",
+    "static/media/missao.6df4469e.jpg": "/joy-cafe/static/media/missao.6df4469e.jpg",
     "static/media/omelete.a87b70c3.jpg": "/joy-cafe/static/media/omelete.a87b70c3.jpg",
     "static/media/omelete.fd0e207c.jpg": "/joy-cafe/static/media/omelete.fd0e207c.jpg",
     "static/media/pao_queijo.247fcd4a.jpg": "/joy-cafe/static/media/pao_queijo.247fcd4a.jpg",
@@ -42,8 +45,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.630eb7f5.js",
-    "static/js/2.c7caae91.chunk.js",
-    "static/css/main.6c26b374.chunk.css",
-    "static/js/main.9a3f5857.chunk.js"
+    "static/js/2.cafe41f2.chunk.js",
+    "static/css/main.e425f7f3.chunk.css",
+    "static/js/main.4a5104f9.chunk.js"
   ]
 }
