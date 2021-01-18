@@ -16,7 +16,7 @@ const PageLayout = ({image, imageBig, dados, alt, title, extraInfo}) => {
             <Container fluid="true">
                 
                 <Row>
-                    <Col xs lg="7">
+                    <Col xs lg="7" xl="8">
                         {/* Chamamos a imagem para o caso mobile */}
                         <img src={image} alt={alt} className="heroImgMobile" />
 
@@ -30,7 +30,7 @@ const PageLayout = ({image, imageBig, dados, alt, title, extraInfo}) => {
                     </Col>
 
                     {/* Imagem para segunda coluna */}
-                    <Col lg="5">
+                    <Col lg="5" xl="4">
                         <img src={imageBig} alt={alt} className="heroImg" />
                         
                     </Col>
