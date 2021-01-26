@@ -11,11 +11,11 @@ const ContactInfo = ({}) => {
 
             <a href="" target="_blank" className="contactGroup">
 
-            <img src={wa_icon} className="contactIcon"/>
+                <img src={wa_icon} className="contactIcon" alt="Ícone WhatsApp"/>
 
-            <div className="paragraph contactText">
-                WhatsApp
-            </div>
+                <div className="paragraph contactText">
+                    WhatsApp
+                </div>
 
             </a>
 
@@ -24,11 +24,11 @@ const ContactInfo = ({}) => {
 
             <a href="https://www.instagram.com/joycaferp/" target="_blank" rel="noreferrer" className="contactGroup">
 
-            <img src={ig_icon} className="contactIcon"/>
+                <img src={ig_icon} className="contactIcon" alt="Ícone Instagram"/>
 
-            <div className="paragraph contactText">
-                Instagram
-            </div>
+                <div className="paragraph contactText">
+                    Instagram
+                </div>
 
             </a>
 
@@ -37,11 +37,11 @@ const ContactInfo = ({}) => {
 
             <a href="https://www.facebook.com/joycaferp" target="_blank" rel="noreferrer" className="contactGroup">
 
-            <img src={fb_icon} className="contactIcon"/>
+                <img src={fb_icon} className="contactIcon" alt="Ícone Facebook"/>
 
-            <div className="paragraph contactText">
-                Facebook
-            </div>
+                <div className="paragraph contactText">
+                    Facebook
+                </div>
 
             </a>
 
@@ -50,11 +50,11 @@ const ContactInfo = ({}) => {
 
             <a href="mailto:joycaferp@gmail.com" target="_blank" rel="noreferrer" className="contactGroup">
 
-            <img src={email_icon} className="contactIcon"/>
+                <img src={email_icon} className="contactIcon" alt="Ícone Email"/>
 
-            <div className="paragraph contactText">
-                Email
-            </div>
+                <div className="paragraph contactText">
+                    Email
+                </div>
 
             </a>
 
