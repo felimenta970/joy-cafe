@@ -1,5 +1,5 @@
 // Import React e rotas
-import React, { useState } from 'react';
+import React, { useState, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // Import componente da barra lateral
@@ -10,7 +10,7 @@ import Main from './Main.js';
 import Sobre from './pages/sobre/sobre.js';
 import Servicos from './pages/sobre/servicos.js';
 
-import Almoco from './pages/almoco.js';
+
 
 import Cafe from './pages/bebidas/cafe.js';
 import Capuccino from './pages/bebidas/capuccino.js';
@@ -29,8 +29,14 @@ import Doces from './pages/doces.js';
 import Omelete from './pages/panq_omel.js';
 import Salada from './pages/salada.js';
 
+// Página de 
+import Loading from './components/Loading.js';
+
 // Import estilos
 import './styles/App.scss';
+
+// Componentes importados em modo lazy
+const Almoco = lazy(() => import('./pages/almoco.js'));
 
 
 function App({}) {
@@ -60,9 +66,11 @@ function App({}) {
 				<Switch>
 					{/* Almoço */}
 					<Route exact path="/almoco">
-						<Almoco 
-							handleToggleSidebar={handleToggleSidebar}
-						/>
+						<Suspense fallback={<Loading /> }>
+							<Almoco 
+								handleToggleSidebar={handleToggleSidebar}
+							/>
+						</Suspense>
 					</Route>
 
 					{/* Sobre */}
