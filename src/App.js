@@ -6,28 +6,27 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import SideBar from './components/SideBar.js';
 
 // Import de páginas
-import Main from './Main.js';
-import Sobre from './pages/sobre/sobre.js';
-import Servicos from './pages/sobre/servicos.js';
 
+//import Main from './Main.js';
+//import Sobre from './pages/sobre/sobre.js';
+//import Servicos from './pages/sobre/servicos.js';
 
+// import Cafe from './pages/bebidas/cafe.js';
+// import Capuccino from './pages/bebidas/capuccino.js';
+// import Cha from './pages/bebidas/cha.js';
+// import Leite from './pages/bebidas/leite.js';
+// import Refri from './pages/bebidas/refriAgua.js';
+// import Suco from './pages/bebidas/suco.js';
 
-import Cafe from './pages/bebidas/cafe.js';
-import Capuccino from './pages/bebidas/capuccino.js';
-import Cha from './pages/bebidas/cha.js';
-import Leite from './pages/bebidas/leite.js';
-import Refri from './pages/bebidas/refriAgua.js';
-import Suco from './pages/bebidas/suco.js';
+//import Natural from './pages/lanches/natural.js';
+//import Quente from './pages/lanches/quente.js';
 
-import Natural from './pages/lanches/natural.js';
-import Quente from './pages/lanches/quente.js';
+// import PaoQueijo from './pages/salgados/pao_queijo.js';
+// import Salgado from './pages/salgados/salgado.js';
 
-import PaoQueijo from './pages/salgados/pao_queijo.js';
-import Salgado from './pages/salgados/salgado.js';
-
-import Doces from './pages/doces.js';
-import Omelete from './pages/panq_omel.js';
-import Salada from './pages/salada.js';
+// import Doces from './pages/doces.js';
+// import Omelete from './pages/panq_omel.js';
+// import Salada from './pages/salada.js';
 
 // Página de 
 import Loading from './components/Loading.js';
@@ -36,7 +35,29 @@ import Loading from './components/Loading.js';
 import './styles/App.scss';
 
 // Componentes importados em modo lazy
+
+const Main = lazy(() => import('./Main.js'));
+const Sobre = lazy(() => import('./pages/sobre/sobre.js'));
+const Servicos = lazy(() => import('./pages/sobre/servicos.js'));
+
 const Almoco = lazy(() => import('./pages/almoco.js'));
+
+const Cafe = lazy(() => import('./pages/bebidas/cafe.js'));
+const Capuccino = lazy(() => import('./pages/bebidas/capuccino.js'));
+const Cha = lazy(() => import('./pages/bebidas/cha.js'));
+const Leite = lazy(() => import('./pages/bebidas/leite.js'));
+const Refri = lazy(() => import('./pages/bebidas/refriAgua.js'));
+const Suco = lazy(() => import('./pages/bebidas/suco.js'));
+
+const Natural = lazy(() => import('./pages/lanches/natural.js'));
+const Quente = lazy(() => import('./pages/lanches/quente.js'));
+
+const PaoQueijo = lazy(() => import('./pages/salgados/pao_queijo.js'));
+const Salgado = lazy(() => import('./pages/salgados/salgado.js'));
+
+const Doces = lazy(() => import('./pages/doces.js'));
+const Omelete = lazy(() => import('./pages/panq_omel.js'));
+const Salada = lazy(() => import('./pages/salada.js'));
 
 
 function App({}) {
@@ -75,9 +96,11 @@ function App({}) {
 
 					{/* Sobre */}
 					<Route exact path="/sobre">
-						<Sobre
-							handleToggleSidebar={handleToggleSidebar}
-						/>
+						<Suspense fallback={<Loading /> }>
+							<Sobre
+								handleToggleSidebar={handleToggleSidebar}
+							/>
+						</Suspense>
 					</Route>
 
 					{/* Serviços */}
@@ -89,95 +112,125 @@ function App({}) {
 
 					{/* Refri e Água */}
 					<Route exact path="/refriAgua">
-						<Refri 
-							handleToggleSidebar={handleToggleSidebar}
-						/>
+						<Suspense fallback={<Loading /> }>
+							<Refri 
+								handleToggleSidebar={handleToggleSidebar}
+							/>
+						</Suspense>
 					</Route>
 					
 					<Route exact path="/cafe">
-						<Cafe 
-							handleToggleSidebar={handleToggleSidebar}
-						/>
+						<Suspense fallback={<Loading /> }>
+							<Cafe 
+								handleToggleSidebar={handleToggleSidebar}
+							/>
+						</Suspense>
 					</Route>
 
 					<Route exact path="/capuccinos">
-						<Capuccino 
-							handleToggleSidebar={handleToggleSidebar}
-						/>
+						<Suspense fallback={<Loading /> }>
+							<Capuccino 
+								handleToggleSidebar={handleToggleSidebar}
+							/>
+						</Suspense>
 					</Route>
 
 					<Route exact path="/cha">
-						<Cha
-							handleToggleSidebar={handleToggleSidebar}
-						/>
+						<Suspense fallback={<Loading /> }>
+							<Cha
+								handleToggleSidebar={handleToggleSidebar}
+							/>
+						</Suspense>
 					</Route>
 
 					<Route exact path="/leites">
-						<Leite
-							handleToggleSidebar={handleToggleSidebar}
-						/>
+						<Suspense fallback={<Loading /> }>
+							<Leite
+								handleToggleSidebar={handleToggleSidebar}
+							/>
+						</Suspense>
 					</Route>
 
 					<Route exact path="/sucos">
-						<Suco
-							handleToggleSidebar={handleToggleSidebar}
-						/>
+						<Suspense fallback={<Loading /> }>
+							<Suco
+								handleToggleSidebar={handleToggleSidebar}
+							/>
+						</Suspense>
 					</Route>
 
 					<Route exact path="/naturais">
-						<Natural
-							handleToggleSidebar={handleToggleSidebar}
-						/>
+						<Suspense fallback={<Loading /> }>
+							<Natural
+								handleToggleSidebar={handleToggleSidebar}
+							/>
+						</Suspense>
 					</Route>
 
 					<Route exact path="/lanches_quentes">
-						<Quente 
-							handleToggleSidebar={handleToggleSidebar}
-						/>
+						<Suspense fallback={<Loading /> }>
+							<Quente 
+								handleToggleSidebar={handleToggleSidebar}
+							/>
+						</Suspense>
 					</Route>
 
 					<Route exact path="/pao_queijo">
-						<PaoQueijo 
-							handleToggleSidebar={handleToggleSidebar}
-						/>
+						<Suspense fallback={<Loading /> }>
+							<PaoQueijo 
+								handleToggleSidebar={handleToggleSidebar}
+							/>
+						</Suspense>
 					</Route>
 
 					<Route exact path="/salgados">
-						<Salgado
-							handleToggleSidebar={handleToggleSidebar}
-						/>
+						<Suspense fallback={<Loading /> }>
+							<Salgado
+								handleToggleSidebar={handleToggleSidebar}
+							/>
+						</Suspense>
 					</Route>
 
 					<Route exact path="/doces">
-						<Doces
-							handleToggleSidebar={handleToggleSidebar}
-						/>
+						<Suspense fallback={<Loading /> }>
+							<Doces
+								handleToggleSidebar={handleToggleSidebar}
+							/>
+						</Suspense>
 					</Route>
 
 					<Route exact path="/panq_omel">
-						<Omelete
-							handleToggleSidebar={handleToggleSidebar}
-						/>
+						<Suspense fallback={<Loading /> }>
+							<Omelete
+								handleToggleSidebar={handleToggleSidebar}
+							/>
+						</Suspense>
 					</Route>
 
 					<Route exact path="/saladas">
-						<Salada
-							handleToggleSidebar={handleToggleSidebar}
-						/>
+						<Suspense fallback={<Loading /> }>
+							<Salada
+								handleToggleSidebar={handleToggleSidebar}
+							/>
+						</Suspense>
 					</Route>
 					
 
 					{/* Página inicial ("/" ou "joy-cafe") */}
 					<Route exact path="/">
-						<Main
-							handleToggleSidebar={handleToggleSidebar}
-						/>
+						<Suspense fallback={<Loading /> }>
+							<Main
+								handleToggleSidebar={handleToggleSidebar}
+							/>
+						</Suspense>
 					</Route>
 
 					<Route exact path="/joy-cafe">
-						<Main
-							handleToggleSidebar={handleToggleSidebar}
-						/>
+						<Suspense fallback={<Loading /> }>
+							<Main
+								handleToggleSidebar={handleToggleSidebar}
+							/>
+						</Suspense>
 					</Route>
 
 				</Switch>
