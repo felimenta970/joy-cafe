@@ -43,11 +43,11 @@ const Sobre = ({handleToggleSidebar}) => {
                                             return (
                                                 <div key={key2}>
 
-                                                    <div className="paragraph">
+                                                    <div className="paragraph tabbed">
                                                         {data2.paragraph1}
                                                     </div>
 
-                                                    <div className="paragraph">
+                                                    <div className="paragraph tabbed">
                                                         {data2.paragraph2}
                                                     </div>
                                                 </div>

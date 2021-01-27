@@ -44,10 +44,10 @@ const Main = ({handleToggleSidebar}) => {
                         <Col xs lg="7">
                         {/* Criamos um div para conter a lista de itens */}
                             <img src={almoco} alt="Foto de prato de comida" className="heroImgMobile" />
-                            <div className="paragraph">
+                            <div className="paragraph tabbed">
                                 {mainText1}
                             </div>
-                            <div className="paragraph">
+                            <div className="paragraph tabbed">
                                 {mainText2}
                             </div>
 
