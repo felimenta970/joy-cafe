@@ -25,8 +25,9 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-	background:  #87BFB2,;
+	background:  #87BFB2;
 }
+
 
 .textLoading {
     display: flex;
@@ -122,8 +123,7 @@ body {
         
         
     }
-
-
+    
     // Estilo para o nome da página
     .categoryName {        
         font-weight: bold;
