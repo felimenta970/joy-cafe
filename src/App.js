@@ -105,9 +105,11 @@ function App({}) {
 
 					{/* Serviços */}
 					<Route exact path="/servicos">
-						<Servicos
-							handleToggleSidebar={handleToggleSidebar}
-						/>
+						<Suspense fallback={<Loading /> }>
+							<Servicos
+								handleToggleSidebar={handleToggleSidebar}
+							/>
+						</Suspense>
 					</Route>
 
 					{/* Refri e Água */}
