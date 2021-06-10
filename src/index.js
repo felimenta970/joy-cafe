@@ -3,8 +3,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 
+import $ from 'jquery';
+import Popper from 'popper.js';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 // Import styles
-import './styles/index.css';
+import './main/styles/index.css';
 
 // Import do código
 import App from './App';

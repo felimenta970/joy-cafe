@@ -7,11 +7,11 @@ import { FaBars } from 'react-icons/fa';
 
 import { Container, Row, Col } from "react-bootstrap";
 
-import Map from './components/Maps.js';
-import ContactInfo from './components/contactInfo.js';
+import Map from './main/components/Maps.js';
+import ContactInfo from './main/components/contactInfo.js';
 
-import almoco from './assets/mobile/almoco-alt.jpg';
-import clock from './assets/joy/clock.jpg';
+import almoco from './main/assets/mobile/almoco-alt.jpg';
+import clock from './main/assets/joy/clock.jpg';
 
 const location = {
     address: 'R. Joaquim Antônio Nascimento, 156',

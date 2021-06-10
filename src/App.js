@@ -3,61 +3,42 @@ import React, { useState, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // Import componente da barra lateral
-import SideBar from './components/SideBar.js';
+import SideBar from './main/components/SideBar.js';
 
 // Import de páginas
 
-//import Main from './Main.js';
-//import Sobre from './pages/sobre/sobre.js';
-//import Servicos from './pages/sobre/servicos.js';
-
-// import Cafe from './pages/bebidas/cafe.js';
-// import Capuccino from './pages/bebidas/capuccino.js';
-// import Cha from './pages/bebidas/cha.js';
-// import Leite from './pages/bebidas/leite.js';
-// import Refri from './pages/bebidas/refriAgua.js';
-// import Suco from './pages/bebidas/suco.js';
-
-//import Natural from './pages/lanches/natural.js';
-//import Quente from './pages/lanches/quente.js';
-
-// import PaoQueijo from './pages/salgados/pao_queijo.js';
-// import Salgado from './pages/salgados/salgado.js';
-
-// import Doces from './pages/doces.js';
-// import Omelete from './pages/panq_omel.js';
-// import Salada from './pages/salada.js';
-
 // Página de 
-import Loading from './components/Loading.js';
+import Loading from './main/components/Loading.js';
 
 // Import estilos
-import './styles/App.scss';
+import './main/styles/App.scss';
 
 // Componentes importados em modo lazy
 
 const Main = lazy(() => import('./Main.js'));
-const Sobre = lazy(() => import('./pages/sobre/sobre.js'));
-const Servicos = lazy(() => import('./pages/sobre/servicos.js'));
+const Sobre = lazy(() => import('./main/pages/sobre/sobre.js'));
+const Servicos = lazy(() => import('./main/pages/sobre/servicos.js'));
 
-const Almoco = lazy(() => import('./pages/almoco.js'));
+const Almoco = lazy(() => import('./main/pages/almoco.js'));
 
-const Cafe = lazy(() => import('./pages/bebidas/cafe.js'));
-const Capuccino = lazy(() => import('./pages/bebidas/capuccino.js'));
-const Cha = lazy(() => import('./pages/bebidas/cha.js'));
-const Leite = lazy(() => import('./pages/bebidas/leite.js'));
-const Refri = lazy(() => import('./pages/bebidas/refriAgua.js'));
-const Suco = lazy(() => import('./pages/bebidas/suco.js'));
+const Cafe = lazy(() => import('./main/pages/bebidas/cafe.js'));
+const Capuccino = lazy(() => import('./main/pages/bebidas/capuccino.js'));
+const Cha = lazy(() => import('./main/pages/bebidas/cha.js'));
+const Leite = lazy(() => import('./main/pages/bebidas/leite.js'));
+const Refri = lazy(() => import('./main/pages/bebidas/refriAgua.js'));
+const Suco = lazy(() => import('./main/pages/bebidas/suco.js'));
 
-const Natural = lazy(() => import('./pages/lanches/natural.js'));
-const Quente = lazy(() => import('./pages/lanches/quente.js'));
+const Natural = lazy(() => import('./main/pages/lanches/natural.js'));
+const Quente = lazy(() => import('./main/pages/lanches/quente.js'));
 
-const PaoQueijo = lazy(() => import('./pages/salgados/pao_queijo.js'));
-const Salgado = lazy(() => import('./pages/salgados/salgado.js'));
+const PaoQueijo = lazy(() => import('./main/pages/salgados/pao_queijo.js'));
+const Salgado = lazy(() => import('./main/pages/salgados/salgado.js'));
 
-const Doces = lazy(() => import('./pages/doces.js'));
-const Omelete = lazy(() => import('./pages/panq_omel.js'));
-const Salada = lazy(() => import('./pages/salada.js'));
+const Doces = lazy(() => import('./main/pages/doces.js'));
+const Omelete = lazy(() => import('./main/pages/panq_omel.js'));
+const Salada = lazy(() => import('./main/pages/salada.js'));
+
+const Login = lazy(() => import('./backoffice/Login'))
 
 
 function App({}) {
@@ -88,7 +69,7 @@ function App({}) {
 					{/* Almoço */}
 					<Route exact path="/almoco">
 						<Suspense fallback={<Loading /> }>
-							<Almoco 
+							<Login 
 								handleToggleSidebar={handleToggleSidebar}
 							/>
 						</Suspense>
