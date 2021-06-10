@@ -39,6 +39,7 @@ const Omelete = lazy(() => import('./main/pages/panq_omel.js'));
 const Salada = lazy(() => import('./main/pages/salada.js'));
 
 const Login = lazy(() => import('./backoffice/Login'))
+const AdicionarItem = lazy(() => import('./backoffice/AdicionarItem'))
 
 
 function App({}) {
@@ -216,9 +217,15 @@ function App({}) {
 						</Suspense>
 					</Route>
 
-					<Route exact path="/backoffice">
+					<Route exact path="/backoffice/Login">
 						<Suspense fallback={<Loading />}>
 							<Login />
+						</Suspense>
+					</Route>
+
+					<Route exact path="/backoffice/Item">
+						<Suspense fallback={<Loading />}>
+							<AdicionarItem />
 						</Suspense>
 					</Route>
 

@@ -1,40 +1,37 @@
-@import "../main/styles/App.scss";
+@import "../../main/styles/App.scss";
 
-.login-background {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+.main {
+    padding: 24px;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
+    overflow-y: auto; // Necessário para tornar a página scrollável
+    background-color: #87BFB2;
+    
+}
+
+.btn-right {
+    float: right;
+}
+
+.btn-right Button {
+    margin-left: 10px;
+}
+
+
+.background {
+    width: 100%;
     background:  #87BFB2;
 }
 
-.login-background .login-wrapper {
-    
-    background-color: #52887b;
-    color: white;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: 'IBM Plex Sans', serif;
-}
-
-.login-wrapper {
-    max-width: 100%;
-    min-width: 350px;
-    padding: 40px;
-    border-radius: 10px;
-}
-
-Button {
+.btn-submit {
     background-color: #1b5a4b !important;
     color: white !important;
     border-color: #1b5a4b !important;
     font-weight: 400 !important;
 }
 
-Button:active {
+.btn-submit:active {
     border-color: #094436 !important;
     -webkit-box-shadow: 0px 0px 18px 3px rgba(5,35,28,0.3) !important; 
     box-shadow: 0px 0px 18px 3px rgba(5,35,28,0.3) !important;
@@ -42,6 +39,10 @@ Button:active {
 
 .btn-submit:active {
     border-color: none !important;
+}
+
+.form-control {
+    width: 100% !important;
 }
 
 .form-control:focus {
@@ -59,10 +60,3 @@ Button:active {
     font-family: 'IBM Plex Sans', serif;
 }
 
-.form-group {
-    width: 340px;
-}
-
-.h1-login {
-    font-size: 2.5rem;
-}

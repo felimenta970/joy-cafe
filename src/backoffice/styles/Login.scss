@@ -1,0 +1,36 @@
+@import "./common.scss";
+
+.login-background {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background:  #87BFB2;
+}
+
+.login-background .login-wrapper {
+    
+    background-color: #52887b;
+    color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'IBM Plex Sans', serif;
+}
+
+.login-wrapper {
+    max-width: 100%;
+    min-width: 350px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.form-group {
+    width: 340px;
+}
+
+.h1-login {
+    font-size: 2.5rem;
+}

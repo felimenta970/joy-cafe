@@ -5,7 +5,7 @@ import Input from './components/Input'
 
 import Form from 'react-bootstrap/Form'
 
-import './Login.scss'
+import './styles/Login.scss'
 
 export default function Login() {
     return (
@@ -16,14 +16,14 @@ export default function Login() {
                     <Form.Row>
                         <Form.Group controlId="loginUser">
                             <Form.Label>Usuário</Form.Label>
-                            <Form.Control type="text" placeholder="Usuário" />
+                            <Form.Control type="text" placeholder="Usuário" className="login-input" />
                         </Form.Group>
                     </Form.Row>
                 
                     <Form.Row>
                         <Form.Group controlId="floginPassword">
                             <Form.Label>Senha</Form.Label>
-                            <Form.Control type="password" placeholder="Senha" />
+                            <Form.Control type="password" placeholder="Senha" className="login-input"/>
                         </Form.Group>
                     </Form.Row>
                 
