@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 // Import icons
 import { FaBars } from 'react-icons/fa';
 
-import { Container, Row, Col } from "react-bootstrap";
+import PageLayoutAbout from "../../components/PageLayoutAbout.js";
 
 import { dadosSobreNos } from "../../data/dadosSobreNos.js";
 
@@ -20,56 +20,10 @@ const Sobre = ({handleToggleSidebar}) => {
                     
                 </div>
 
-                <h1 className="categoryName">SOBRE NÓS</h1>
-
-                {/* Container para o layout */}
-                <Container fluid="true">
-
-                    {/* Map de dados para os dados */}
-                    {dadosSobreNos.map((data, key) => {
-                        return(
-
-                            <div key={key}>
-                                <h1 className="categoryName">{data.title}</h1>
-
-                                <Row>
-                                    <Col xs lg="6">
-                                    {/* Criamos um div para conter a lista de itens */}
-                                        <img src={data.imgSrc} alt={data.imgAlt} className="heroImgMobile" />
-
-                                        {/* Outro map para os parágrafos */}
-                                        {data.text.map((data2, key2) => {
-
-                                            return (
-                                                <div key={key2}>
-
-                                                    <div className="paragraph tabbed">
-                                                        {data2.paragraph1}
-                                                    </div>
-
-                                                    <div className="paragraph tabbed">
-                                                        {data2.paragraph2}
-                                                    </div>
-                                                </div>
-                                            );
-                                        })}
-                                        
-                                    </Col>
-
-                                    <Col lg="6">
-
-                                        <img src={data.imgSrc} alt={data.imgAlt} className="heroImg" />
-                                        
-                                    </Col>
-                                </Row>
-
-                                <br/>
-
-                            </div>
-                        );
-                    })}
-
-                </Container>
+                <PageLayoutAbout
+                    dados = {dadosSobreNos}
+                    title = "SOBRE NÓS"
+                />
 
             </div>
 

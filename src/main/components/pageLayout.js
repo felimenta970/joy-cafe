@@ -23,7 +23,7 @@ const PageLayout = ({image, imageBig, dados, alt, title, extraInfo}) => {
                         {/* Componente List gera os dados */}
                         <List dataItem={dados} />
 
-                        {/* Componente de infos adicionais do meny */}
+                        {/* Componente de infos adicionais do menu */}
                         <ExtraInfoMenu extraInfo={extraInfo}
                         />
 
