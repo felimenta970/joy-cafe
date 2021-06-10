@@ -34,6 +34,25 @@ Button {
     font-weight: 400 !important;
 }
 
+Button:active {
+    border-color: #094436 !important;
+    -webkit-box-shadow: 0px 0px 18px 3px rgba(5,35,28,0.3) !important; 
+    box-shadow: 0px 0px 18px 3px rgba(5,35,28,0.3) !important;
+}
+
+.btn-submit:active {
+    border-color: none !important;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+}
+
+.form-control:active {
+    box-shadow: none !important;
+    border-color: #1b5a4b !important;
+}
+
 
 .label {
     text-align: center;

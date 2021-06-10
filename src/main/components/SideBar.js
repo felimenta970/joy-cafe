@@ -145,13 +145,24 @@ const SideBar = ({toggled, handleToggleSidebar}) => {
 							Doces e Taças
 							<Link to="/doces" />
 						</MenuItem>
+
+						<hr />
+
+						<MenuItem>
+							BackOffice
+							<Link to="/backoffice" />
+						</MenuItem>
 						
 					</Menu>
+					
 
 				} </SidebarContent>
 
 				{/* Footer da Sidebar */}
 				<SidebarFooter className="footerSection">
+
+					
+
 					<div className = "footerSidebar">
 						Felipe Pimenta @ 2021
 					</div>

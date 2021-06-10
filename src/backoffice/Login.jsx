@@ -27,11 +27,11 @@ export default function Login() {
                         </Form.Group>
                     </Form.Row>
                 
-                <Form.Row className="button-row">
-                    <Button type="submit" bsStyle="btn-submit" block>
-                        ENTRAR
-                    </Button>
-                </Form.Row>
+                    <Form.Row className="button-row">
+                        <Button type="submit"  className="btn-submit" block>
+                            ENTRAR
+                        </Button>
+                    </Form.Row>
                 
                 </Form>
             </div>

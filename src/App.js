@@ -216,6 +216,12 @@ function App({}) {
 						</Suspense>
 					</Route>
 
+					<Route exact path="/backoffice">
+						<Suspense fallback={<Loading />}>
+							<Login />
+						</Suspense>
+					</Route>
+
 				</Switch>
 			</Router>
 				
