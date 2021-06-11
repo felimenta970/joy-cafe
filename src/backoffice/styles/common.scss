@@ -1,4 +1,5 @@
 @import "../../main/styles/App.scss";
+@import './input.css';
 
 .main {
     padding: 24px;
@@ -28,7 +29,7 @@
     background-color: #1b5a4b !important;
     color: white !important;
     border-color: #1b5a4b !important;
-    font-weight: 400 !important;
+    font-weight: 600 !important;
 }
 
 .btn-submit:active {
@@ -43,6 +44,7 @@
 
 .form-control {
     width: 100% !important;
+    font-family: 'IBM Plex Sans', sans-serif !important;
 }
 
 .form-control:focus {
@@ -60,3 +62,29 @@
     font-family: 'IBM Plex Sans', serif;
 }
 
+Button {
+    font-family: 'IBM Plex Sans', sans-serif !important;
+    font-weight: 400 !important;
+}
+
+
+Table th {
+    background-color: #fcf7f6 !important;
+    color: #063133;
+}
+
+Table tr:nth-child(odd) {
+    background-color: rgba(27, 90, 75, 0.65);
+    color: white;
+
+}
+
+Table tr:nth-child(even) {
+    background-color: rgba(27, 90, 75, 0.60);
+    color: white;
+}
+
+Table tbody tr:hover td {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #063133;
+}

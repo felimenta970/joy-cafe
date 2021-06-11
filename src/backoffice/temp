@@ -1,0 +1,46 @@
+<Container fluid className="main">
+
+            
+                <h1>Itens</h1>
+            
+                
+                <Row>   
+                    <Accordion>
+                        <Accordion.Toggle as={Button} variant="primary" eventKey="0">
+                            Abrir
+                        </Accordion.Toggle>
+                        <Accordion.Collapse eventKey="0">
+                            <div>
+                            <Col xs="12" lg="4">
+                                <AdicionarRefeicao />
+                            </Col>
+                        
+
+                            <Col xs="12" lg="4">
+                                <AddItem
+                                    itemName="Acompanhamento"
+                                    controlId="refeicaoInput"
+                                    label="Acompanhamento"
+                                    placeholder="Nome do acompanhamento..."
+                                    value
+                                    onClick
+                                />
+                            </Col>
+
+                            <Col xs="12" lg="4">
+                                <AddItem
+                                    itemName="Salada"
+                                    controlId="saladaInput"
+                                    label="Salada"
+                                    placeholder="Nome da salada..."
+                                    value
+                                    onClick
+                                />
+                            </Col>
+                            </div>
+                        </Accordion.Collapse>
+                        
+                    </Accordion>
+                </Row>
+        
+            </Container>

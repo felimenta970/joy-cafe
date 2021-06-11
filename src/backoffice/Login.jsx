@@ -1,7 +1,6 @@
 
 import React from "react";
 import  Button from "react-bootstrap/Button";
-import Input from './components/Input'
 
 import Form from 'react-bootstrap/Form'
 
@@ -28,7 +27,7 @@ export default function Login() {
                     </Form.Row>
                 
                     <Form.Row className="button-row">
-                        <Button type="submit"  className="btn-submit" block>
+                        <Button type="submit"  className="btn-submit btn-font" block>
                             ENTRAR
                         </Button>
                     </Form.Row>
