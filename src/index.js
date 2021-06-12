@@ -9,13 +9,13 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Import styles
-import './main/styles/index.css';
+import './frontend/main/styles/index.css';
 
 // Import do código
-import App from './App';
+import App from './frontend/App';
 
 // Import da função de serviceWorker para que o app possa ser instalado como PWA
-import { registerServiceWorker } from './serviceWorker';
+import { registerServiceWorker } from './frontend/serviceWorker';
 
 // Chamada para funcionamento de PWA
 registerServiceWorker();
