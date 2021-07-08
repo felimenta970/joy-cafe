@@ -8,20 +8,10 @@
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.5.0",
-    "axios": "^0.21.1",
-    "bcrypt": "^5.0.1",
-    "body-parser": "^1.19.0",
     "bootstrap": "^4.5.3",
-    "express": "^4.17.1",
-    "express-query-int": "^3.0.0",
     "google-map-react": "^2.1.9",
     "jquery": "^3.6.0",
-    "jsonwebtoken": "^8.5.1",
-    "lodash": "^4.17.21",
-    "mongoose": "^4.13.21",
-    "node-restful": "^0.2.6",
     "node-sass": "^4.14.1",
-    "pm2": "^5.1.0",
     "popper.js": "^1.16.1",
     "react": "^17.0.1",
     "react-accessible-accordion": "^3.3.4",
@@ -36,7 +26,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "nodemon",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -60,7 +50,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.1.0",
-    "nodemon": "^2.0.7"
+    "gh-pages": "^3.1.0"
   }
 }

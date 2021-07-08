@@ -209,6 +209,14 @@ function App({}) {
 						</Suspense>
 					</Route>
 
+					<Route exact path="/joy-cafe">
+						<Suspense fallback={<Loading /> }>
+							<Main
+								handleToggleSidebar={handleToggleSidebar}
+							/>
+						</Suspense>
+					</Route>
+
 					<Route exact path="/backoffice/Login">
 						<Suspense fallback={<Loading />}>
 							<Login />
