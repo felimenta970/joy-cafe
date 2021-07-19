@@ -12,6 +12,7 @@ import Loading from './main/components/Loading.js';
 
 // Import estilos
 import './main/styles/App.scss';
+import AlmocoBackoffice from './backoffice/AlmocoBackoffice';
 
 // Componentes importados em modo lazy
 
@@ -42,7 +43,7 @@ const Login = lazy(() => import('./backoffice/Login'))
 const AdicionarItem = lazy(() => import('./backoffice/AdicionarItens'))
 
 
-function App({}) {
+function App() {
 	// Ativado ou não
 	const [toggled, setToggled] = useState(false);
 
@@ -226,6 +227,11 @@ function App({}) {
 					<Route exact path="/backoffice/Item">
 						<Suspense fallback={<Loading />}>
 							<AdicionarItem />
+						</Suspense>
+					</Route>
+					<Route exact path="/backoffice/Almoco">
+						<Suspense fallback={<Loading />}>
+							<AlmocoBackoffice />
 						</Suspense>
 					</Route>
 

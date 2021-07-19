@@ -191,6 +191,10 @@ body {
 
     }
 
+    .button-row {
+        margin-top: 10px;;
+    }
+
     // Estilo para itens na lista
     // Nome
     .itemName {
@@ -198,7 +202,25 @@ body {
         font-size: 25px;
         font-weight: bold;
         color: #063133;
+
     }
+
+    .itemNameAlmoco {
+        margin-bottom: 5px;
+        margin-top: 10px;
+        font-size: 25px;
+        font-weight: bold;
+        color: #063133;
+        display: block;
+    }
+
+    .adicionarRefeicaoAlmoco {
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+
 
     // Descrição
     .itemDesc {

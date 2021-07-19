@@ -1,0 +1,21 @@
+@import "../../main/styles/App.scss";
+@import "./common.scss";
+
+.selector {
+    background-color: #ffffff;
+    /* padding: 20px 20px 60px 20px; */
+    border-radius: 5px;
+    color: #063133;
+    border: 1px solid #ced4da;
+    
+}
+
+.refeicaoRow {
+    margin-bottom: 5px;
+}
+
+.hr-almoco {
+    margin-bottom: 0;
+    color: #838d96 !important;
+    background-color: #838d96;
+}

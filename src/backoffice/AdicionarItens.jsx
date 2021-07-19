@@ -28,7 +28,7 @@ export default function AdicionarItem() {
                     <AccordionItem uuid="1">
                         <AccordionItemHeading>
                             <AccordionItemButton>
-                                Adicionar itens                                
+                                Adicionar itens
                             </AccordionItemButton>
                         </AccordionItemHeading>
                         <AccordionItemPanel>

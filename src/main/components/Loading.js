@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Loading = ({}) => {
+const Loading = () => {
     return (
         <div className="bgLoading">
             <h1 className="textLoading">Carregando</h1>

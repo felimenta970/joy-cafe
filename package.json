@@ -16,6 +16,7 @@
     "react": "^17.0.1",
     "react-accessible-accordion": "^3.3.4",
     "react-bootstrap": "^1.4.0",
+    "react-bootstrap-select-dropdown": "^1.1.0",
     "react-dom": "^17.0.1",
     "react-icons": "^4.1.0",
     "react-pro-sidebar": "^0.6.0",

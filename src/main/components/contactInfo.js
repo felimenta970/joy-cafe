@@ -5,7 +5,7 @@ import wa_icon from './../assets/whatsapp_icon.png';
 import ig_icon from './../assets/instagram_icon.png';
 import email_icon from './../assets/email_icon.png';
 
-const ContactInfo = ({}) => {
+const ContactInfo = () => {
     return (
         <div>
 

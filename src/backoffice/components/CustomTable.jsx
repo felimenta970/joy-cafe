@@ -10,10 +10,22 @@ export default ({title, isRefeicao, itens}) => {
     return (
     <>
         <Table striped borderless hover >
-            <col width="5%"/>
-            <col width="55%"/>
-            <col width="25%"/>
-            <col width="15%" />
+
+            {isRefeicao ? 
+                <>
+                    <col width="5%"/>
+                    <col width="55%"/>
+                    <col width="25%"/>
+                    <col width="15%" />
+                </> :
+                <>
+                    <col width="5%"/>
+                    <col width="85%"/>
+                    <col width="15%"/>
+                    
+                </>
+            }
+
 
             <thead>
                 <tr>

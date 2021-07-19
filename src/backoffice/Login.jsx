@@ -6,6 +6,8 @@ import Form from 'react-bootstrap/Form'
 
 import './styles/Login.scss'
 
+import { Link } from 'react-router-dom';
+
 export default function Login() {
     return (
         <div className="login-background">
@@ -27,7 +29,7 @@ export default function Login() {
                     </Form.Row>
                 
                     <Form.Row className="button-row">
-                        <Button type="submit"  className="btn-submit btn-font" block>
+                         <Button className="btn-submit btn-font" block> 
                             ENTRAR
                         </Button>
                     </Form.Row>
